@@ -451,3 +451,720 @@ FROM [Customer] AS [c]
 2023-09-01 14:35:51.042 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 200 - application/json;+charset=utf-8 74.9758ms
 2023-09-01 14:35:52.056 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
 2023-09-01 14:35:52.060 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 429 0 - 3.5807ms
+2023-09-01 14:43:22.264 +01:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-01 14:43:22.320 +01:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-01 14:43:22.322 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-01 14:43:22.509 +01:00 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-09-01 14:43:22.510 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-01 14:43:22.512 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-01 14:43:22.591 +01:00 [INF] Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-09-01 14:43:22.601 +01:00 [INF] Applying migration '20230901134311_Inix'.
+2023-09-01 14:43:22.658 +01:00 [ERR] Failed executing DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Customer] (
+    [Id] int NOT NULL IDENTITY,
+    [Code] varchar(50) NOT NULL,
+    [Name] varchar(50) NOT NULL,
+    [Email] varchar(50) NOT NULL,
+    [PhoneNumber] varchar(50) NOT NULL,
+    [Creditlimit] decimal(18,2) NOT NULL,
+    [IsActive] bit NOT NULL,
+    [CreatedDate] datetime NOT NULL,
+    [UpdatedDate] datetime NOT NULL,
+    [TaxCode] varchar(50) NOT NULL,
+    CONSTRAINT [PK__Customer__3214EC07F56FF4B0] PRIMARY KEY ([Id])
+);
+2023-09-01 16:10:37.638 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 16:10:38.035 +01:00 [INF] Now listening on: https://localhost:7142
+2023-09-01 16:10:38.036 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 16:10:38.038 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 16:10:38.038 +01:00 [INF] Hosting environment: Development
+2023-09-01 16:10:38.039 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 16:10:39.805 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/swagger/index.html - -
+2023-09-01 16:10:39.869 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/swagger/index.html - - - 200 - text/html;charset=utf-8 63.9535ms
+2023-09-01 16:10:40.334 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/swagger/v1/swagger.json - -
+2023-09-01 16:10:40.394 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 60.0293ms
+2023-09-01 16:10:44.246 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:10:44.357 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 16:10:44.359 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:10:44.361 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:10:44.361 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 115.5668ms
+2023-09-01 16:27:25.081 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 16:27:25.414 +01:00 [INF] Now listening on: https://localhost:7142
+2023-09-01 16:27:25.414 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 16:27:25.416 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 16:27:25.417 +01:00 [INF] Hosting environment: Development
+2023-09-01 16:27:25.417 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 16:27:26.846 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/swagger/index.html - -
+2023-09-01 16:27:26.907 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/swagger/index.html - - - 200 - text/html;charset=utf-8 62.7350ms
+2023-09-01 16:27:27.387 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/swagger/v1/swagger.json - -
+2023-09-01 16:27:27.455 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 67.6732ms
+2023-09-01 16:27:30.115 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:27:30.237 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 16:27:30.239 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:27:30.240 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:27:30.241 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 126.5273ms
+2023-09-01 16:27:40.068 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer application/json 61
+2023-09-01 16:27:40.086 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid header
+2023-09-01 16:27:40.087 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:27:40.088 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:27:40.088 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer application/json 61 - 401 0 - 20.6910ms
+2023-09-01 16:38:45.277 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:38:45.315 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid header
+2023-09-01 16:38:45.318 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:38:45.320 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:38:45.322 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 46.5557ms
+2023-09-01 16:39:50.784 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:39:50.793 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid header
+2023-09-01 16:39:50.794 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:39:50.796 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:39:50.797 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 13.0519ms
+2023-09-01 16:39:57.212 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 16:39:57.572 +01:00 [INF] Now listening on: https://localhost:7142
+2023-09-01 16:39:57.592 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 16:39:57.594 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 16:39:57.595 +01:00 [INF] Hosting environment: Development
+2023-09-01 16:39:57.595 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 16:39:58.325 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:39:59.136 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/swagger/index.html - -
+2023-09-01 16:39:59.183 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/swagger/index.html - - - 200 - text/html;charset=utf-8 46.0410ms
+2023-09-01 16:39:59.542 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/swagger/v1/swagger.json - -
+2023-09-01 16:39:59.609 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 66.4561ms
+2023-09-01 16:39:59.723 +01:00 [INF] Executed DbCommand (386ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__username_0 AND [u].[Password] = @__password_1
+2023-09-01 16:39:59.733 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid username or password
+2023-09-01 16:39:59.736 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:39:59.737 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:39:59.742 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 1418.1522ms
+2023-09-01 16:40:01.325 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:40:01.363 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__username_0 AND [u].[Password] = @__password_1
+2023-09-01 16:40:01.365 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid username or password
+2023-09-01 16:40:01.366 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:40:01.367 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:40:01.367 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 42.4587ms
+2023-09-01 16:40:02.111 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:40:02.170 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__username_0 AND [u].[Password] = @__password_1
+2023-09-01 16:40:02.171 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid username or password
+2023-09-01 16:40:02.172 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:40:02.172 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:40:02.173 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 61.5249ms
+2023-09-01 16:40:41.094 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/swagger/index.html - -
+2023-09-01 16:40:41.105 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/swagger/index.html - - - 200 - text/html;charset=utf-8 11.3036ms
+2023-09-01 16:40:41.269 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/swagger/v1/swagger.json - -
+2023-09-01 16:40:41.284 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 14.8397ms
+2023-09-01 16:41:19.097 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:41:19.114 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 16:41:19.116 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:41:19.117 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:41:19.118 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 21.1710ms
+2023-09-01 16:41:49.457 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:41:49.506 +01:00 [INF] Executed DbCommand (15ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__username_0 AND [u].[Password] = @__password_1
+2023-09-01 16:41:49.508 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid username or password
+2023-09-01 16:41:49.510 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:41:49.512 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:41:49.514 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 56.9481ms
+2023-09-01 16:41:50.708 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:41:50.726 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__username_0 AND [u].[Password] = @__password_1
+2023-09-01 16:41:50.727 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid username or password
+2023-09-01 16:41:50.727 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:41:50.728 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:41:50.728 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 20.4822ms
+2023-09-01 16:42:01.106 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:42:01.246 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at Techie.Helper.BasicAuthenticationHandler.HandleAuthenticateAsync() in /Users/abayomiogunnusi/Desktop/Blog/Techie/Helper/BasicAuthenticationHandler.cs:line 33
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-09-01 16:42:01.282 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 500 - text/plain;+charset=utf-8 176.3345ms
+2023-09-01 16:42:08.087 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:42:08.118 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__username_0 AND [u].[Password] = @__password_1
+2023-09-01 16:42:08.120 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid username or password
+2023-09-01 16:42:08.122 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:42:08.125 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:42:08.126 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 38.5926ms
+2023-09-01 16:42:54.786 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 16:42:55.096 +01:00 [INF] Now listening on: https://localhost:7142
+2023-09-01 16:42:55.096 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 16:42:55.098 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 16:42:55.098 +01:00 [INF] Hosting environment: Development
+2023-09-01 16:42:55.099 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 16:42:56.554 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/swagger/index.html - -
+2023-09-01 16:42:56.620 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/swagger/index.html - - - 200 - text/html;charset=utf-8 66.1971ms
+2023-09-01 16:42:56.755 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/swagger/v1/swagger.json - -
+2023-09-01 16:42:56.822 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 66.7238ms
+2023-09-01 16:43:00.861 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:43:01.479 +01:00 [INF] Executed DbCommand (57ms) [Parameters=[@__email_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__email_0 AND [u].[Password] = @__password_1
+2023-09-01 16:43:01.488 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid username or password
+2023-09-01 16:43:01.491 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:43:01.491 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:43:01.494 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 633.8019ms
+2023-09-01 16:43:02.999 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:43:03.025 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__email_0 AND [u].[Password] = @__password_1
+2023-09-01 16:43:03.026 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid username or password
+2023-09-01 16:43:03.028 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:43:03.029 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:43:03.029 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 30.3377ms
+2023-09-01 16:43:40.550 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:43:40.637 +01:00 [INF] Executed DbCommand (14ms) [Parameters=[@__email_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__email_0 AND [u].[Password] = @__password_1
+2023-09-01 16:43:40.638 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid username or password
+2023-09-01 16:43:40.639 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:43:40.640 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:43:40.640 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 90.9344ms
+2023-09-01 16:43:42.025 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:43:42.044 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__email_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__email_0 AND [u].[Password] = @__password_1
+2023-09-01 16:43:42.045 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid username or password
+2023-09-01 16:43:42.045 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:43:42.046 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:43:42.046 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 21.1330ms
+2023-09-01 16:55:22.501 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:55:22.642 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__email_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__email_0 AND [u].[Password] = @__password_1
+2023-09-01 16:55:22.643 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid username or password
+2023-09-01 16:55:22.644 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:55:22.645 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:55:22.646 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 147.1749ms
+2023-09-01 16:55:24.130 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:55:24.148 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__email_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__email_0 AND [u].[Password] = @__password_1
+2023-09-01 16:55:24.150 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid username or password
+2023-09-01 16:55:24.151 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:55:24.152 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:55:24.152 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 22.0519ms
+2023-09-01 16:55:25.096 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:55:25.133 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[@__email_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__email_0 AND [u].[Password] = @__password_1
+2023-09-01 16:55:25.135 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid username or password
+2023-09-01 16:55:25.135 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:55:25.136 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:55:25.137 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 40.5657ms
+2023-09-01 16:55:26.196 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:55:26.202 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 429 0 - 6.5921ms
+2023-09-01 16:55:26.710 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:55:26.712 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 429 0 - 1.1632ms
+2023-09-01 16:55:27.114 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:55:27.114 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 429 0 - 0.2832ms
+2023-09-01 16:55:27.477 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:55:27.477 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 429 0 - 0.3637ms
+2023-09-01 16:55:27.797 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:55:27.798 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 429 0 - 0.4224ms
+2023-09-01 16:55:28.159 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:55:28.161 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 429 0 - 1.2694ms
+2023-09-01 16:55:35.904 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:55:35.932 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[@__email_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__email_0 AND [u].[Password] = @__password_1
+2023-09-01 16:55:35.935 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid username or password
+2023-09-01 16:55:35.937 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:55:35.944 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:55:35.945 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 41.2425ms
+2023-09-01 16:55:50.475 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:55:50.500 +01:00 [INF] Executed DbCommand (13ms) [Parameters=[@__email_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__email_0 AND [u].[Password] = @__password_1
+2023-09-01 16:55:50.503 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid username or password
+2023-09-01 16:55:50.504 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:55:50.505 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:55:50.505 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 30.7209ms
+2023-09-01 16:55:56.463 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:55:56.500 +01:00 [INF] Executed DbCommand (14ms) [Parameters=[@__email_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__email_0 AND [u].[Password] = @__password_1
+2023-09-01 16:55:56.502 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: Invalid username or password
+2023-09-01 16:55:56.502 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:55:56.503 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:55:56.504 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 41.7165ms
+2023-09-01 16:59:06.833 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 16:59:07.178 +01:00 [INF] Now listening on: https://localhost:7142
+2023-09-01 16:59:07.178 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 16:59:07.180 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 16:59:07.180 +01:00 [INF] Hosting environment: Development
+2023-09-01 16:59:07.181 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 16:59:08.791 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/swagger/index.html - -
+2023-09-01 16:59:08.860 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/swagger/index.html - - - 200 - text/html;charset=utf-8 70.6399ms
+2023-09-01 16:59:09.156 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/swagger/v1/swagger.json - -
+2023-09-01 16:59:09.214 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 58.0381ms
+2023-09-01 16:59:12.125 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:59:12.887 +01:00 [INF] Executed DbCommand (185ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__username_0 AND [u].[Password] = @__password_1
+2023-09-01 16:59:12.920 +01:00 [DBG] AuthenticationScheme: BasicAuthentication was successfully authenticated.
+2023-09-01 16:59:12.923 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 16:59:12.928 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Techie.Container.CustomerController (Techie).
+2023-09-01 16:59:12.940 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-01 16:59:12.956 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Techie.Modal.CustomerModel, Techie, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-01 16:59:12.964 +01:00 [INF] Executed action Techie.Container.CustomerController.GetAll (Techie) in 34.4334ms
+2023-09-01 16:59:12.964 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 16:59:12.967 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 200 - application/json;+charset=utf-8 842.2059ms
+2023-09-01 16:59:22.743 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:59:22.766 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 16:59:22.769 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 16:59:22.772 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 16:59:22.773 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 401 0 - 30.1026ms
+2023-09-01 16:59:24.852 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 16:59:24.908 +01:00 [INF] Executed DbCommand (19ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__username_0 AND [u].[Password] = @__password_1
+2023-09-01 16:59:24.909 +01:00 [DBG] AuthenticationScheme: BasicAuthentication was successfully authenticated.
+2023-09-01 16:59:24.911 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 16:59:24.912 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Techie.Container.CustomerController (Techie).
+2023-09-01 16:59:24.917 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-01 16:59:24.918 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Techie.Modal.CustomerModel, Techie, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-01 16:59:24.918 +01:00 [INF] Executed action Techie.Container.CustomerController.GetAll (Techie) in 6.3451ms
+2023-09-01 16:59:24.918 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 16:59:24.918 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 200 - application/json;+charset=utf-8 66.9820ms
+2023-09-01 17:00:21.730 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 17:00:22.063 +01:00 [INF] Now listening on: https://localhost:7142
+2023-09-01 17:00:22.088 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 17:00:22.095 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 17:00:22.097 +01:00 [INF] Hosting environment: Development
+2023-09-01 17:00:22.098 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 17:00:22.221 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 17:00:22.835 +01:00 [INF] Executed DbCommand (30ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__username_0 AND [u].[Password] = @__password_1
+2023-09-01 17:00:22.866 +01:00 [DBG] AuthenticationScheme: BasicAuthentication was successfully authenticated.
+2023-09-01 17:00:22.868 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:00:22.872 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:00:22.903 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-01 17:00:22.920 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Techie.Modal.CustomerModel, Techie, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-01 17:00:22.940 +01:00 [INF] Executed action Techie.Container.CustomerController.GetAll (Techie) in 67.3134ms
+2023-09-01 17:00:22.941 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:00:22.944 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 200 - application/json;+charset=utf-8 723.9868ms
+2023-09-01 17:00:23.435 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/swagger/index.html - -
+2023-09-01 17:00:23.484 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/swagger/index.html - - - 200 - text/html;charset=utf-8 48.9842ms
+2023-09-01 17:00:23.738 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/swagger/v1/swagger.json - -
+2023-09-01 17:00:23.790 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 52.3726ms
+2023-09-01 17:00:25.753 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 17:00:25.805 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__username_0 AND [u].[Password] = @__password_1
+2023-09-01 17:00:25.806 +01:00 [DBG] AuthenticationScheme: BasicAuthentication was successfully authenticated.
+2023-09-01 17:00:25.807 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:00:25.807 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:00:25.812 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-01 17:00:25.813 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Techie.Modal.CustomerModel, Techie, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-01 17:00:25.814 +01:00 [INF] Executed action Techie.Container.CustomerController.GetAll (Techie) in 6.6261ms
+2023-09-01 17:00:25.814 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:00:25.814 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 200 - application/json;+charset=utf-8 61.7708ms
+2023-09-01 17:00:30.792 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 17:00:30.805 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:00:30.806 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:00:30.806 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:00:30.855 +01:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-01 17:00:30.856 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Techie.Modal.CustomerModel, Techie, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-01 17:00:30.856 +01:00 [INF] Executed action Techie.Container.CustomerController.GetAll (Techie) in 49.667ms
+2023-09-01 17:00:30.856 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:00:30.856 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 200 - application/json;+charset=utf-8 65.3783ms
+2023-09-01 17:00:38.843 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7142/api/Customer - -
+2023-09-01 17:00:38.882 +01:00 [INF] Executed DbCommand (28ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__username_0 AND [u].[Password] = @__password_1
+2023-09-01 17:00:38.883 +01:00 [DBG] AuthenticationScheme: BasicAuthentication was successfully authenticated.
+2023-09-01 17:00:38.883 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:00:38.883 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:00:38.887 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-01 17:00:38.888 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Techie.Modal.CustomerModel, Techie, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-01 17:00:38.889 +01:00 [INF] Executed action Techie.Container.CustomerController.GetAll (Techie) in 5.6552ms
+2023-09-01 17:00:38.889 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:00:38.889 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7142/api/Customer - - - 200 - application/json;+charset=utf-8 47.0305ms
+2023-09-01 17:01:02.847 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 17:01:02.913 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 17:01:02.915 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 17:01:02.915 +01:00 [INF] Hosting environment: Development
+2023-09-01 17:01:02.915 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 17:01:14.760 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 17:01:14.786 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-01 17:01:15.260 +01:00 [INF] Executed DbCommand (19ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__username_0 AND [u].[Password] = @__password_1
+2023-09-01 17:01:15.288 +01:00 [DBG] AuthenticationScheme: BasicAuthentication was successfully authenticated.
+2023-09-01 17:01:15.289 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:01:15.293 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:01:15.300 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-01 17:01:15.315 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Techie.Modal.CustomerModel, Techie, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-01 17:01:15.337 +01:00 [INF] Executed action Techie.Container.CustomerController.GetAll (Techie) in 42.4787ms
+2023-09-01 17:01:15.337 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:01:15.340 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 200 - application/json;+charset=utf-8 581.0201ms
+2023-09-01 17:01:17.711 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 17:01:17.749 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__username_0 AND [u].[Password] = @__password_1
+2023-09-01 17:01:17.750 +01:00 [DBG] AuthenticationScheme: BasicAuthentication was successfully authenticated.
+2023-09-01 17:01:17.750 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:01:17.750 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:01:17.752 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-01 17:01:17.753 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Techie.Modal.CustomerModel, Techie, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-01 17:01:17.753 +01:00 [INF] Executed action Techie.Container.CustomerController.GetAll (Techie) in 3.072ms
+2023-09-01 17:01:17.754 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:01:17.754 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 200 - application/json;+charset=utf-8 43.4031ms
+2023-09-01 17:01:19.157 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 17:01:19.224 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__username_0 AND [u].[Password] = @__password_1
+2023-09-01 17:01:19.225 +01:00 [DBG] AuthenticationScheme: BasicAuthentication was successfully authenticated.
+2023-09-01 17:01:19.225 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:01:19.225 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:01:19.228 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-01 17:01:19.228 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Techie.Modal.CustomerModel, Techie, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-01 17:01:19.229 +01:00 [INF] Executed action Techie.Container.CustomerController.GetAll (Techie) in 3.1975ms
+2023-09-01 17:01:19.229 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:01:19.229 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 200 - application/json;+charset=utf-8 72.5098ms
+2023-09-01 17:01:19.910 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 17:01:19.917 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 429 0 - 7.1676ms
+2023-09-01 17:01:20.413 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 17:01:20.414 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 429 0 - 0.9956ms
+2023-09-01 17:01:29.456 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 17:01:29.483 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:01:29.483 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:01:29.483 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:01:29.509 +01:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-01 17:01:29.510 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Techie.Modal.CustomerModel, Techie, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-01 17:01:29.511 +01:00 [INF] Executed action Techie.Container.CustomerController.GetAll (Techie) in 27.3345ms
+2023-09-01 17:01:29.511 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:01:29.511 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 200 - application/json;+charset=utf-8 55.3410ms
+2023-09-01 17:01:30.318 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 17:01:30.319 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:01:30.320 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:01:30.320 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:01:30.334 +01:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-01 17:01:30.335 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Techie.Modal.CustomerModel, Techie, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-01 17:01:30.336 +01:00 [INF] Executed action Techie.Container.CustomerController.GetAll (Techie) in 14.231ms
+2023-09-01 17:01:30.336 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:01:30.336 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 200 - application/json;+charset=utf-8 17.5194ms
+2023-09-01 17:01:45.428 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer application/json 46
+2023-09-01 17:01:45.436 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:01:45.436 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:01:45.449 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:01:45.469 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-01 17:01:45.470 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Techie.Modal.CustomerModel, Techie, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-01 17:01:45.471 +01:00 [INF] Executed action Techie.Container.CustomerController.GetAll (Techie) in 21.9312ms
+2023-09-01 17:01:45.471 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:01:45.471 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer application/json 46 - 200 - application/json;+charset=utf-8 43.5826ms
+2023-09-01 17:02:01.304 +01:00 [INF] Application is shutting down...
+2023-09-01 17:02:05.415 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 17:02:05.471 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 17:02:05.473 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 17:02:05.473 +01:00 [INF] Hosting environment: Development
+2023-09-01 17:02:05.473 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 17:02:11.340 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer application/json 46
+2023-09-01 17:02:11.371 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-01 17:02:11.429 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:02:11.431 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 17:02:11.431 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 17:02:11.434 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer application/json 46 - 401 0 - 95.6639ms
+2023-09-01 17:02:51.992 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer application/json 46
+2023-09-01 17:02:52.504 +01:00 [INF] Executed DbCommand (25ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__username_0 AND [u].[Password] = @__password_1
+2023-09-01 17:02:52.532 +01:00 [DBG] AuthenticationScheme: BasicAuthentication was successfully authenticated.
+2023-09-01 17:02:52.533 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:02:52.538 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:02:52.545 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-01 17:02:52.559 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Techie.Modal.CustomerModel, Techie, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-01 17:02:52.574 +01:00 [INF] Executed action Techie.Container.CustomerController.GetAll (Techie) in 35.2288ms
+2023-09-01 17:02:52.575 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 17:02:52.577 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer application/json 46 - 200 - application/json;+charset=utf-8 585.6859ms
+2023-09-01 17:12:16.459 +01:00 [INF] Application is shutting down...
+2023-09-01 17:12:21.678 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 17:12:21.765 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 17:12:21.766 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 17:12:21.766 +01:00 [INF] Hosting environment: Development
+2023-09-01 17:12:21.766 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 17:12:34.320 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/ - -
+2023-09-01 17:12:34.345 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-01 17:12:34.868 +01:00 [INF] Executed DbCommand (22ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__username_0 AND [u].[Password] = @__password_1
+2023-09-01 17:12:34.896 +01:00 [DBG] AuthenticationScheme: BasicAuthentication was successfully authenticated.
+2023-09-01 17:12:34.901 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/ - - - 404 0 - 582.8910ms
+2023-09-01 17:13:05.206 +01:00 [INF] Application is shutting down...
+2023-09-01 17:13:09.847 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 17:13:09.901 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 17:13:09.903 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 17:13:09.903 +01:00 [INF] Hosting environment: Development
+2023-09-01 17:13:09.903 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 17:13:15.391 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/1 - -
+2023-09-01 17:13:15.424 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-01 17:13:15.486 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:13:15.488 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:13:15.495 +01:00 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:13:15.907 +01:00 [INF] Executed DbCommand (22ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+WHERE [c].[Id] = @__p_0
+2023-09-01 17:13:15.917 +01:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2023-09-01 17:13:15.919 +01:00 [INF] Executed action Techie.Container.CustomerController.GetById (Techie) in 422.5293ms
+2023-09-01 17:13:15.919 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:13:15.922 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/1 - - - 404 - text/plain;+charset=utf-8 532.6190ms
+2023-09-01 17:13:17.140 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/1 - -
+2023-09-01 17:13:17.146 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:13:17.148 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:13:17.148 +01:00 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:13:17.194 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+WHERE [c].[Id] = @__p_0
+2023-09-01 17:13:17.195 +01:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2023-09-01 17:13:17.195 +01:00 [INF] Executed action Techie.Container.CustomerController.GetById (Techie) in 46.511ms
+2023-09-01 17:13:17.195 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:13:17.196 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/1 - - - 404 - text/plain;+charset=utf-8 56.7686ms
+2023-09-01 17:13:45.760 +01:00 [INF] Application is shutting down...
+2023-09-01 17:13:51.552 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 17:13:51.600 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 17:13:51.601 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 17:13:51.601 +01:00 [INF] Hosting environment: Development
+2023-09-01 17:13:51.601 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 17:13:52.170 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger - -
+2023-09-01 17:13:52.202 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger - - - 301 0 - 32.4756ms
+2023-09-01 17:13:52.208 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-01 17:13:52.241 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 32.7182ms
+2023-09-01 17:13:52.603 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/swagger-ui.css - -
+2023-09-01 17:13:52.605 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/swagger-ui-bundle.js - -
+2023-09-01 17:13:52.605 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/swagger-ui-standalone-preset.js - -
+2023-09-01 17:13:52.605 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/_framework/aspnetcore-browser-refresh.js - -
+2023-09-01 17:13:52.607 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 1.6318ms
+2023-09-01 17:13:52.630 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-09-01 17:13:52.631 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/swagger-ui.css - - - 200 144929 text/css 27.8988ms
+2023-09-01 17:13:52.631 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-09-01 17:13:52.632 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 26.5038ms
+2023-09-01 17:13:52.641 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-09-01 17:13:52.641 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 36.5288ms
+2023-09-01 17:13:52.781 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-01 17:13:52.821 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/favicon-32x32.png - -
+2023-09-01 17:13:52.821 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-09-01 17:13:52.821 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/favicon-32x32.png - - - 200 628 image/png 0.3797ms
+2023-09-01 17:13:52.823 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 42.1863ms
+2023-09-01 17:14:00.848 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/1 - -
+2023-09-01 17:14:00.862 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-01 17:14:00.945 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:14:00.946 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:14:00.954 +01:00 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:14:01.356 +01:00 [INF] Executed DbCommand (19ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+WHERE [c].[Id] = @__p_0
+2023-09-01 17:14:01.367 +01:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2023-09-01 17:14:01.368 +01:00 [INF] Executed action Techie.Container.CustomerController.GetById (Techie) in 413.508ms
+2023-09-01 17:14:01.369 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:14:01.371 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/1 - - - 404 - text/plain;+charset=utf-8 522.8925ms
+2023-09-01 17:14:05.701 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/2 - -
+2023-09-01 17:14:05.723 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:14:05.724 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:14:05.727 +01:00 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:14:05.795 +01:00 [INF] Executed DbCommand (29ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+WHERE [c].[Id] = @__p_0
+2023-09-01 17:14:05.796 +01:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2023-09-01 17:14:05.796 +01:00 [INF] Executed action Techie.Container.CustomerController.GetById (Techie) in 68.5618ms
+2023-09-01 17:14:05.796 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:14:05.796 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/2 - - - 404 - text/plain;+charset=utf-8 95.7133ms
+2023-09-01 17:14:10.490 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/3 - -
+2023-09-01 17:14:10.524 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:14:10.526 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:14:10.526 +01:00 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:14:10.561 +01:00 [INF] Executed DbCommand (20ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+WHERE [c].[Id] = @__p_0
+2023-09-01 17:14:10.595 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.CustomerModel'.
+2023-09-01 17:14:10.601 +01:00 [INF] Executed action Techie.Container.CustomerController.GetById (Techie) in 74.5552ms
+2023-09-01 17:14:10.601 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:14:10.601 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/3 - - - 200 - application/json;+charset=utf-8 111.4199ms
+2023-09-01 17:14:20.503 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/3 - -
+2023-09-01 17:14:20.507 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:14:20.507 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:14:20.508 +01:00 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:14:20.536 +01:00 [INF] Executed DbCommand (15ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+WHERE [c].[Id] = @__p_0
+2023-09-01 17:14:20.539 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.CustomerModel'.
+2023-09-01 17:14:20.540 +01:00 [INF] Executed action Techie.Container.CustomerController.GetById (Techie) in 32.1815ms
+2023-09-01 17:14:20.540 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:14:20.541 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/3 - - - 200 - application/json;+charset=utf-8 37.5262ms
+2023-09-01 17:14:29.851 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/3 - -
+2023-09-01 17:14:29.858 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:14:29.858 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:14:29.860 +01:00 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:14:29.903 +01:00 [INF] Executed DbCommand (16ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+WHERE [c].[Id] = @__p_0
+2023-09-01 17:14:29.904 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.CustomerModel'.
+2023-09-01 17:14:29.905 +01:00 [INF] Executed action Techie.Container.CustomerController.GetById (Techie) in 45.3146ms
+2023-09-01 17:14:29.905 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:14:29.905 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/3 - - - 200 - application/json;+charset=utf-8 54.3606ms
+2023-09-01 17:14:32.572 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/3 - -
+2023-09-01 17:14:32.575 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:14:32.576 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:14:32.578 +01:00 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:14:32.611 +01:00 [INF] Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+WHERE [c].[Id] = @__p_0
+2023-09-01 17:14:32.612 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.CustomerModel'.
+2023-09-01 17:14:32.612 +01:00 [INF] Executed action Techie.Container.CustomerController.GetById (Techie) in 33.964ms
+2023-09-01 17:14:32.613 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:14:32.613 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/3 - - - 200 - application/json;+charset=utf-8 40.8986ms
+2023-09-01 17:14:34.792 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/3 - -
+2023-09-01 17:14:34.798 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:14:34.799 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:14:34.800 +01:00 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:14:34.834 +01:00 [INF] Executed DbCommand (16ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+WHERE [c].[Id] = @__p_0
+2023-09-01 17:14:34.835 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.CustomerModel'.
+2023-09-01 17:14:34.836 +01:00 [INF] Executed action Techie.Container.CustomerController.GetById (Techie) in 35.476ms
+2023-09-01 17:14:34.836 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:14:34.836 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/3 - - - 200 - application/json;+charset=utf-8 44.8272ms
+2023-09-01 17:14:35.567 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/3 - -
+2023-09-01 17:14:35.568 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:14:35.568 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:14:35.569 +01:00 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Techie.Container.CustomerController (Techie).
+2023-09-01 17:14:35.574 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+WHERE [c].[Id] = @__p_0
+2023-09-01 17:14:35.575 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.CustomerModel'.
+2023-09-01 17:14:35.575 +01:00 [INF] Executed action Techie.Container.CustomerController.GetById (Techie) in 6.2272ms
+2023-09-01 17:14:35.575 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 17:14:35.575 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/3 - - - 200 - application/json;+charset=utf-8 8.0865ms
+2023-09-01 17:14:46.354 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 17:14:46.377 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:14:46.382 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 17:14:46.383 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 17:14:46.383 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 401 0 - 29.4365ms
+2023-09-01 17:14:55.430 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5197/api/Customer/1 - -
+2023-09-01 17:14:55.435 +01:00 [INF] CORS policy execution successful.
+2023-09-01 17:14:55.437 +01:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2023-09-01 17:14:55.438 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 17:14:55.439 +01:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2023-09-01 17:14:55.440 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5197/api/Customer/1 - - - 401 0 - 9.4001ms
+2023-09-01 17:15:07.176 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-01 17:15:07.190 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 13.4650ms
+2023-09-01 17:15:07.255 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/_framework/aspnetcore-browser-refresh.js - -
+2023-09-01 17:15:07.258 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 1.4164ms
+2023-09-01 17:15:07.407 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-01 17:15:07.410 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.2589ms
+2023-09-01 17:20:58.469 +01:00 [INF] Application is shutting down...

@@ -1,5 +1,5 @@
 ﻿
-using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
 using Techie.Modal;
@@ -9,6 +9,8 @@ using Techie.Service;
 
 namespace Techie.Container
 {
+
+    [Authorize]
     [EnableRateLimiting("fixed window")]
     // [EnableCors("CorsPolicy")]
     [Route("api/[controller]")]
@@ -37,6 +39,7 @@ namespace Techie.Container
             return Ok("Added successfully");
         }
 
+          [AllowAnonymous]
         [DisableRateLimiting]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)

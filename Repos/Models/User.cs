@@ -39,4 +39,9 @@ public partial class User
     [StringLength(50)]
     [Unicode(false)]
     public string Password { get; set; } = null!;
+
+    [Column("role")]
+    [StringLength(50)]
+    [Unicode(false)]
+    public string? Role { get; set; }
 }
