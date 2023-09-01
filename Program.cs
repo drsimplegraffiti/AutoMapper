@@ -6,6 +6,7 @@ using Serilog;
 using Serilog.Events;
 using Techie.Container;
 using Techie.Helper;
+using Techie.Modal;
 using Techie.Repos;
 using Techie.Service;
 
@@ -45,6 +46,9 @@ builder.Services.AddRateLimiter(_ => _.AddFixedWindowLimiter(policyName:"fixed w
     options.PermitLimit = 3;
     options.QueueProcessingOrder = System.Threading.RateLimiting.QueueProcessingOrder.OldestFirst;
 }).RejectionStatusCode = StatusCodes.Status429TooManyRequests);
+
+var _jwtsetting = builder.Configuration.GetSection("JwtSettings");
+builder.Services.Configure<JwtSettings>(_jwtsetting);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

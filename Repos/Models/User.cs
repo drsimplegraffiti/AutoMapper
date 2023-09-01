@@ -30,12 +30,6 @@ public partial class User
 
     public bool IsActive { get; set; }
 
-    [Column(TypeName = "datetime")]
-    public DateTime CreatedDate { get; set; }
-
-    [Column(TypeName = "datetime")]
-    public DateTime UpdatedDate { get; set; }
-
     [StringLength(50)]
     [Unicode(false)]
     public string Password { get; set; } = null!;
