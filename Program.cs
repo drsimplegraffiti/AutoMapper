@@ -28,6 +28,7 @@ builder.Logging.AddSerilog();
 // Add services to the container.
 //                            Interface          Implementation
 builder.Services.AddTransient<ICustomerService, CustomerService>();
+builder.Services.AddScoped<IRefreshHandler, RefreshHandler>();
 builder.Services.AddDbContext<LearnDataContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("apicon")));
 
 // add basic authentication

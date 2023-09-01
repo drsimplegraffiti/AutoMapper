@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using Techie.Modal;
 using Techie.Repos;
 using Techie.Repos.Models;
+using Techie.Service;
 
 namespace Techie.Controllers
 {
@@ -23,15 +20,18 @@ namespace Techie.Controllers
         private readonly LearnDataContext _context;
         private readonly JwtSettings _jwtsettings;
         private readonly IMapper _mapper;
+        private readonly IRefreshHandler _refreshHandler;
         public AuthorizeController(
             LearnDataContext context,
             IOptions<JwtSettings> options,
-            IMapper mapper
+            IMapper mapper,
+            IRefreshHandler refreshHandler
             )
         {
             _context = context;
             _jwtsettings = options.Value;
             _mapper = mapper;
+            _refreshHandler = refreshHandler;
         }
 
         [HttpPost("GenerateToken")]
@@ -43,7 +43,15 @@ namespace Techie.Controllers
             var token = GenerateToken(user);
             Dictionary<string, string> tokenResponse = new Dictionary<string, string>();
             tokenResponse.Add("token", token);
-            return Ok(tokenResponse);
+            // add refresh token to cookie
+            Response.Cookies.Append("refreshToken", _refreshHandler.GenerateRefreshToken(user.Id).Result);
+            return Ok(
+                new
+                {
+                    token = token,
+                    refreshToken = _refreshHandler.GenerateRefreshToken(user.Id).Result
+                }
+                );
         }
 
         // register a user
@@ -70,6 +78,48 @@ namespace Techie.Controllers
             return Ok("User deleted successfully");
         }
 
+        [HttpPost("RefreshToken")]
+        public async Task<IActionResult> RefreshToken([FromBody] TokenResponse token)
+        {
+           var _refreshtoken = await _context.RefreshTokens.FirstOrDefaultAsync(item => item.Refreshtoken == token.RefreshToken);
+            if (_refreshtoken != null)
+            {
+               var tokenHandler = new JwtSecurityTokenHandler();
+               var tokenkey = Encoding.UTF8.GetBytes(_jwtsettings.SecurityKey);
+               SecurityToken validatedToken;
+               var principal = tokenHandler.ValidateToken(token.Token, new TokenValidationParameters()
+               {
+                   ValidateIssuerSigningKey = true,
+                   IssuerSigningKey = new SymmetricSecurityKey(tokenkey),
+                   ValidateIssuer = false,
+                   ValidateAudience = false,
+                   ClockSkew = TimeSpan.Zero
+               }, out validatedToken);
+
+                var _token = validatedToken as JwtSecurityToken;
+                if(_token != null && _token.Header.Alg.Equals(SecurityAlgorithms.HmacSha256, StringComparison.InvariantCultureIgnoreCase)){
+                  
+                  string userId = principal.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                  var _existingdata = await _context.RefreshTokens.FirstOrDefaultAsync(item => item.Userid == userId && item.Refreshtoken == token.RefreshToken);
+                    if(_existingdata != null){
+                       var _newtoken  = new JwtSecurityToken(
+                            claims: principal.Claims.ToArray(),
+                            expires: DateTime.UtcNow.AddSeconds(30),
+                            signingCredentials: new SigningCredentials(new SymmetricSecurityKey(tokenkey), SecurityAlgorithms.HmacSha256Signature)
+                        );
+                        var _finaltoken = tokenHandler.WriteToken(_newtoken);
+                        return Ok(new TokenResponse
+                        {
+                            Token = _finaltoken,
+                            RefreshToken = _refreshHandler.GenerateRefreshToken(int.Parse(userId)).Result
+                        });
+                    }
+                }
+            }
+            return BadRequest("Invalid token");
+        }
+        
+
         private string GenerateToken(User user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -78,6 +128,7 @@ namespace Techie.Controllers
             {
                 Subject = new ClaimsIdentity(new[]
                 {
+                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                     new Claim(ClaimTypes.Name, user.Code),
                     new Claim(ClaimTypes.Role, user.Role!)
 
@@ -86,7 +137,13 @@ namespace Techie.Controllers
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
-            return tokenHandler.WriteToken(token);
+            var finalToken = tokenHandler.WriteToken(token);
+            return new TokenResponse
+            {
+                Token = finalToken,
+                RefreshToken = _refreshHandler.GenerateRefreshToken(user.Id).Result
+            }.Token; 
+
         }
     }
 }

@@ -22,5 +22,5 @@ public partial class RefreshToken
 
     [Column("refreshtoken")]
     [Unicode(false)]
-    public string? Refreshtoken1 { get; set; }
+    public string? Refreshtoken { get; set; }
 }
