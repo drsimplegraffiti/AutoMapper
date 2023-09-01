@@ -3055,3 +3055,450 @@ WHERE [u].[Code] = @__userCred_UserName_0 AND [u].[Password] = @__userCred_Passw
 2023-09-01 18:16:46.632 +01:00 [INF] Executed endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
 2023-09-01 18:16:46.633 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46 - 200 - application/json;+charset=utf-8 188.2871ms
 2023-09-01 18:16:51.191 +01:00 [INF] Application is shutting down...
+2023-09-01 18:17:19.812 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 18:17:19.862 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 18:17:19.863 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 18:17:19.863 +01:00 [INF] Hosting environment: Development
+2023-09-01 18:17:19.863 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 18:17:32.888 +01:00 [INF] Application is shutting down...
+2023-09-01 18:28:17.480 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 18:28:17.534 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 18:28:17.536 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 18:28:17.536 +01:00 [INF] Hosting environment: Development
+2023-09-01 18:28:17.536 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 18:28:25.880 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-01 18:28:25.942 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 63.8094ms
+2023-09-01 18:28:26.142 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-01 18:28:26.194 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 52.4525ms
+2023-09-01 18:28:41.693 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46
+2023-09-01 18:28:41.711 +01:00 [INF] CORS policy execution successful.
+2023-09-01 18:28:41.715 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-01 18:28:41.734 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions options) in /Users/abayomiogunnusi/Desktop/Blog/Techie/Program.cs:line 46
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-09-01 18:28:41.737 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46 - 500 - text/plain;+charset=utf-8 45.1824ms
+2023-09-01 18:29:01.187 +01:00 [INF] Application is shutting down...
+2023-09-01 18:29:05.362 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 18:29:05.437 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 18:29:05.438 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 18:29:05.439 +01:00 [INF] Hosting environment: Development
+2023-09-01 18:29:05.439 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 18:29:08.969 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46
+2023-09-01 18:29:08.987 +01:00 [INF] CORS policy execution successful.
+2023-09-01 18:29:08.989 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-01 18:29:09.006 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions options) in /Users/abayomiogunnusi/Desktop/Blog/Techie/Program.cs:line 46
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-09-01 18:29:09.012 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46 - 500 - text/plain;+charset=utf-8 44.0035ms
+2023-09-01 18:29:37.062 +01:00 [INF] Application is shutting down...
+2023-09-01 18:29:41.334 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 18:29:41.384 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 18:29:41.386 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 18:29:41.386 +01:00 [INF] Hosting environment: Development
+2023-09-01 18:29:41.386 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 18:29:51.157 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46
+2023-09-01 18:29:51.179 +01:00 [INF] CORS policy execution successful.
+2023-09-01 18:29:51.181 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-01 18:29:51.195 +01:00 [INF] Executing endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-01 18:29:51.204 +01:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Techie.Modal.UserCred) on controller Techie.Controllers.AuthorizeController (Techie).
+2023-09-01 18:29:51.738 +01:00 [INF] Executed DbCommand (26ms) [Parameters=[@__userCred_UserName_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__userCred_UserName_0 AND [u].[Password] = @__userCred_Password_1
+2023-09-01 18:29:51.797 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-09-01 18:29:51.802 +01:00 [INF] Executed action Techie.Controllers.AuthorizeController.GenerateToken (Techie) in 596.8171ms
+2023-09-01 18:29:51.802 +01:00 [INF] Executed endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-01 18:29:51.805 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46 - 200 - application/json;+charset=utf-8 650.5422ms
+2023-09-01 18:30:13.354 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/3 - -
+2023-09-01 18:30:13.376 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 18:30:13.389 +01:00 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Techie.Container.CustomerController (Techie).
+2023-09-01 18:30:13.453 +01:00 [INF] Executed DbCommand (16ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+WHERE [c].[Id] = @__p_0
+2023-09-01 18:30:13.471 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.CustomerModel'.
+2023-09-01 18:30:13.490 +01:00 [INF] Executed action Techie.Container.CustomerController.GetById (Techie) in 100.6981ms
+2023-09-01 18:30:13.491 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 18:30:13.491 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/3 - - - 200 - application/json;+charset=utf-8 137.8030ms
+2023-09-01 18:30:21.084 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/3 - -
+2023-09-01 18:30:21.096 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 18:30:21.097 +01:00 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Techie.Container.CustomerController (Techie).
+2023-09-01 18:30:21.152 +01:00 [INF] Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+WHERE [c].[Id] = @__p_0
+2023-09-01 18:30:21.154 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.CustomerModel'.
+2023-09-01 18:30:21.154 +01:00 [INF] Executed action Techie.Container.CustomerController.GetById (Techie) in 57.6462ms
+2023-09-01 18:30:21.155 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 18:30:21.155 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/3 - - - 200 - application/json;+charset=utf-8 71.8578ms
+2023-09-01 18:30:47.824 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer application/json 46
+2023-09-01 18:30:47.838 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 18:30:47.840 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-01 18:30:47.841 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer application/json 46 - 401 0 - 16.9952ms
+2023-09-01 18:31:08.153 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer application/json 46
+2023-09-01 18:31:08.197 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/1/2023 5:30:21 PM', Current time: '9/1/2023 5:31:08 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-01 18:31:08.209 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/1/2023 5:30:21 PM', Current time: '9/1/2023 5:31:08 PM'.
+2023-09-01 18:31:08.210 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 18:31:08.211 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-01 18:31:08.211 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer application/json 46 - 401 0 - 58.3760ms
+2023-09-01 18:31:09.976 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer application/json 46
+2023-09-01 18:31:09.980 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/1/2023 5:30:21 PM', Current time: '9/1/2023 5:31:09 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-01 18:31:09.982 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/1/2023 5:30:21 PM', Current time: '9/1/2023 5:31:09 PM'.
+2023-09-01 18:31:09.982 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 18:31:09.983 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-01 18:31:09.983 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer application/json 46 - 401 0 - 6.7903ms
+2023-09-01 18:31:21.433 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer application/json 46
+2023-09-01 18:31:21.454 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/1/2023 5:30:21 PM', Current time: '9/1/2023 5:31:21 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-01 18:31:21.456 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/1/2023 5:30:21 PM', Current time: '9/1/2023 5:31:21 PM'.
+2023-09-01 18:31:21.456 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 18:31:21.456 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-01 18:31:21.457 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer application/json 46 - 401 0 - 24.6309ms
+2023-09-01 18:31:22.319 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer application/json 46
+2023-09-01 18:31:22.320 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/1/2023 5:30:21 PM', Current time: '9/1/2023 5:31:22 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-01 18:31:22.325 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/1/2023 5:30:21 PM', Current time: '9/1/2023 5:31:22 PM'.
+2023-09-01 18:31:22.325 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 18:31:22.326 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-01 18:31:22.326 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer application/json 46 - 401 0 - 7.1787ms
+2023-09-01 18:31:27.358 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/3 - -
+2023-09-01 18:31:27.363 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 18:31:27.364 +01:00 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Techie.Container.CustomerController (Techie).
+2023-09-01 18:31:27.405 +01:00 [INF] Executed DbCommand (19ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+WHERE [c].[Id] = @__p_0
+2023-09-01 18:31:27.407 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.CustomerModel'.
+2023-09-01 18:31:27.408 +01:00 [INF] Executed action Techie.Container.CustomerController.GetById (Techie) in 43.8763ms
+2023-09-01 18:31:27.408 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 18:31:27.409 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/3 - - - 200 - application/json;+charset=utf-8 51.0983ms
+2023-09-01 18:31:36.333 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/3 application/json 46
+2023-09-01 18:31:36.340 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 18:31:36.342 +01:00 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Techie.Container.CustomerController (Techie).
+2023-09-01 18:31:36.371 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+WHERE [c].[Id] = @__p_0
+2023-09-01 18:31:36.372 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.CustomerModel'.
+2023-09-01 18:31:36.373 +01:00 [INF] Executed action Techie.Container.CustomerController.GetById (Techie) in 30.241ms
+2023-09-01 18:31:36.373 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 18:31:36.373 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/3 application/json 46 - 200 - application/json;+charset=utf-8 39.7820ms
+2023-09-01 18:31:58.884 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/3 - -
+2023-09-01 18:31:58.891 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 18:31:58.892 +01:00 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Techie.Container.CustomerController (Techie).
+2023-09-01 18:31:58.923 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+WHERE [c].[Id] = @__p_0
+2023-09-01 18:31:58.926 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.CustomerModel'.
+2023-09-01 18:31:58.928 +01:00 [INF] Executed action Techie.Container.CustomerController.GetById (Techie) in 34.9102ms
+2023-09-01 18:31:58.928 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetById (Techie)'
+2023-09-01 18:31:58.928 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/3 - - - 200 - application/json;+charset=utf-8 44.6105ms
+2023-09-01 18:32:38.467 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 18:32:38.475 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 18:32:38.476 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-01 18:32:38.476 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 401 0 - 9.6401ms
+2023-09-01 18:32:44.104 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 18:32:44.138 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-01 18:32:44.141 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2023-09-01 18:32:44.142 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 18:32:44.142 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-01 18:32:44.142 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 401 0 - 38.3434ms
+2023-09-01 18:32:52.927 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46
+2023-09-01 18:32:52.951 +01:00 [INF] CORS policy execution successful.
+2023-09-01 18:32:52.960 +01:00 [INF] Executing endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-01 18:32:52.961 +01:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Techie.Modal.UserCred) on controller Techie.Controllers.AuthorizeController (Techie).
+2023-09-01 18:32:52.985 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[@__userCred_UserName_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__userCred_UserName_0 AND [u].[Password] = @__userCred_Password_1
+2023-09-01 18:32:52.988 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-09-01 18:32:52.989 +01:00 [INF] Executed action Techie.Controllers.AuthorizeController.GenerateToken (Techie) in 27.0875ms
+2023-09-01 18:32:52.989 +01:00 [INF] Executed endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-01 18:32:52.989 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46 - 200 - application/json;+charset=utf-8 62.2382ms
+2023-09-01 18:32:59.572 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 18:32:59.581 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-01 18:32:59.585 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2023-09-01 18:32:59.594 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 18:32:59.595 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-01 18:32:59.596 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 401 0 - 24.4616ms
+2023-09-01 18:33:01.855 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 18:33:01.856 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-01 18:33:01.858 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2023-09-01 18:33:01.859 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 18:33:01.859 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-01 18:33:01.860 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 401 0 - 4.4589ms
+2023-09-01 18:33:03.734 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 18:33:03.743 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-01 18:33:03.745 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2023-09-01 18:33:03.746 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 18:33:03.746 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-01 18:33:03.746 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 401 0 - 12.8247ms
+2023-09-01 18:33:08.322 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 18:33:08.329 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 429 0 - 9.3714ms
+2023-09-01 18:34:07.391 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46
+2023-09-01 18:34:07.393 +01:00 [INF] CORS policy execution successful.
+2023-09-01 18:34:07.394 +01:00 [INF] Executing endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-01 18:34:07.399 +01:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Techie.Modal.UserCred) on controller Techie.Controllers.AuthorizeController (Techie).
+2023-09-01 18:34:07.433 +01:00 [INF] Executed DbCommand (14ms) [Parameters=[@__userCred_UserName_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__userCred_UserName_0 AND [u].[Password] = @__userCred_Password_1
+2023-09-01 18:34:07.435 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-09-01 18:34:07.436 +01:00 [INF] Executed action Techie.Controllers.AuthorizeController.GenerateToken (Techie) in 36.3952ms
+2023-09-01 18:34:07.436 +01:00 [INF] Executed endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-01 18:34:07.436 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46 - 200 - application/json;+charset=utf-8 45.5703ms
+2023-09-01 18:34:14.724 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 18:34:14.733 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-01 18:34:14.736 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2023-09-01 18:34:14.737 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 18:34:14.737 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-01 18:34:14.737 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 401 0 - 13.6884ms
+2023-09-01 18:34:16.021 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 18:34:16.023 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-01 18:34:16.024 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2023-09-01 18:34:16.026 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 18:34:16.026 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-01 18:34:16.026 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 401 0 - 4.9930ms
+2023-09-01 18:34:21.870 +01:00 [INF] Application is shutting down...
+2023-09-01 18:34:55.476 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 18:34:55.524 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 18:34:55.525 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 18:34:55.525 +01:00 [INF] Hosting environment: Development
+2023-09-01 18:34:55.525 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 18:35:01.666 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46
+2023-09-01 18:35:01.691 +01:00 [INF] CORS policy execution successful.
+2023-09-01 18:35:01.693 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-01 18:35:01.706 +01:00 [INF] Executing endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-01 18:35:01.714 +01:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Techie.Modal.UserCred) on controller Techie.Controllers.AuthorizeController (Techie).
+2023-09-01 18:35:02.217 +01:00 [INF] Executed DbCommand (20ms) [Parameters=[@__userCred_UserName_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__userCred_UserName_0 AND [u].[Password] = @__userCred_Password_1
+2023-09-01 18:35:02.277 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-09-01 18:35:02.282 +01:00 [INF] Executed action Techie.Controllers.AuthorizeController.GenerateToken (Techie) in 566.5762ms
+2023-09-01 18:35:02.282 +01:00 [INF] Executed endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-01 18:35:02.285 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46 - 200 - application/json;+charset=utf-8 621.2098ms
+2023-09-01 18:35:11.272 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 18:35:11.327 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-01 18:35:11.337 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2023-09-01 18:35:11.345 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 18:35:11.347 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-01 18:35:11.348 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 401 0 - 76.7953ms
+2023-09-01 18:36:51.711 +01:00 [INF] Application is shutting down...
+2023-09-01 18:36:55.122 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 18:36:55.173 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 18:36:55.174 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 18:36:55.175 +01:00 [INF] Hosting environment: Development
+2023-09-01 18:36:55.175 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 18:36:58.927 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46
+2023-09-01 18:36:58.947 +01:00 [INF] CORS policy execution successful.
+2023-09-01 18:36:58.949 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-01 18:36:58.962 +01:00 [INF] Executing endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-01 18:36:58.970 +01:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Techie.Modal.UserCred) on controller Techie.Controllers.AuthorizeController (Techie).
+2023-09-01 18:36:59.464 +01:00 [INF] Executed DbCommand (19ms) [Parameters=[@__userCred_UserName_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__userCred_UserName_0 AND [u].[Password] = @__userCred_Password_1
+2023-09-01 18:36:59.522 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-09-01 18:36:59.527 +01:00 [INF] Executed action Techie.Controllers.AuthorizeController.GenerateToken (Techie) in 555.402ms
+2023-09-01 18:36:59.527 +01:00 [INF] Executed endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-01 18:36:59.530 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46 - 200 - application/json;+charset=utf-8 605.8935ms
+2023-09-01 18:37:02.375 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46
+2023-09-01 18:37:02.382 +01:00 [INF] CORS policy execution successful.
+2023-09-01 18:37:02.384 +01:00 [INF] Executing endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-01 18:37:02.385 +01:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Techie.Modal.UserCred) on controller Techie.Controllers.AuthorizeController (Techie).
+2023-09-01 18:37:02.420 +01:00 [INF] Executed DbCommand (16ms) [Parameters=[@__userCred_UserName_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__userCred_UserName_0 AND [u].[Password] = @__userCred_Password_1
+2023-09-01 18:37:02.422 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-09-01 18:37:02.422 +01:00 [INF] Executed action Techie.Controllers.AuthorizeController.GenerateToken (Techie) in 37.1161ms
+2023-09-01 18:37:02.422 +01:00 [INF] Executed endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-01 18:37:02.423 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46 - 200 - application/json;+charset=utf-8 48.1867ms
+2023-09-01 18:37:11.240 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 18:37:11.283 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-01 18:37:11.295 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2023-09-01 18:37:11.299 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-01 18:37:11.301 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-01 18:37:11.302 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 401 0 - 62.4488ms
+2023-09-01 18:38:50.612 +01:00 [INF] Application is shutting down...
+2023-09-01 18:38:54.433 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 18:38:54.510 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 18:38:54.512 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 18:38:54.512 +01:00 [INF] Hosting environment: Development
+2023-09-01 18:38:54.512 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-01 18:38:56.185 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46
+2023-09-01 18:38:56.206 +01:00 [INF] CORS policy execution successful.
+2023-09-01 18:38:56.209 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-01 18:38:56.224 +01:00 [INF] Executing endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-01 18:38:56.232 +01:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Techie.Modal.UserCred) on controller Techie.Controllers.AuthorizeController (Techie).
+2023-09-01 18:38:56.707 +01:00 [INF] Executed DbCommand (22ms) [Parameters=[@__userCred_UserName_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__userCred_UserName_0 AND [u].[Password] = @__userCred_Password_1
+2023-09-01 18:38:56.764 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-09-01 18:38:56.769 +01:00 [INF] Executed action Techie.Controllers.AuthorizeController.GenerateToken (Techie) in 536.0375ms
+2023-09-01 18:38:56.770 +01:00 [INF] Executed endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-01 18:38:56.773 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46 - 200 - application/json;+charset=utf-8 589.6795ms
+2023-09-01 18:39:05.930 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer - -
+2023-09-01 18:39:05.971 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 18:39:05.974 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Techie.Container.CustomerController (Techie).
+2023-09-01 18:39:06.011 +01:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-01 18:39:06.029 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Techie.Modal.CustomerModel, Techie, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-01 18:39:06.037 +01:00 [INF] Executed action Techie.Container.CustomerController.GetAll (Techie) in 63.5261ms
+2023-09-01 18:39:06.037 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.GetAll (Techie)'
+2023-09-01 18:39:06.038 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer - - - 200 - application/json;+charset=utf-8 108.0584ms
+2023-09-01 18:39:11.298 +01:00 [INF] Application is shutting down...

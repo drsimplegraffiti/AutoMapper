@@ -13,7 +13,7 @@ namespace Techie.Container
     [Authorize]
     [EnableRateLimiting("fixed window")]
     // [EnableCors("CorsPolicy")]
-    [Route("api/[controller]")]
+    [Route("api/[controller]")] // api/customer
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerService _service;
