@@ -721,3 +721,467 @@ Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime
 2023-09-02 08:40:48.988 +01:00 [INF] Executed endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
 2023-09-02 08:40:48.988 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken - 0 - 415 - application/problem+json;+charset=utf-8 20.2020ms
 2023-09-02 08:40:57.965 +01:00 [INF] Application is shutting down...
+2023-09-02 09:00:41.701 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 09:00:41.754 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 09:00:41.755 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 09:00:41.755 +01:00 [INF] Hosting environment: Development
+2023-09-02 09:00:41.756 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 09:00:44.643 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/ - -
+2023-09-02 09:00:44.672 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 09:00:44.710 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/ - - - 404 0 - 65.8736ms
+2023-09-02 09:00:48.761 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 09:00:48.803 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 42.6986ms
+2023-09-02 09:00:48.980 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 09:00:49.035 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 54.8916ms
+2023-09-02 09:01:31.355 +01:00 [INF] Application is shutting down...
+2023-09-02 09:01:41.826 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 09:01:41.884 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 09:01:41.886 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 09:01:41.886 +01:00 [INF] Hosting environment: Development
+2023-09-02 09:01:41.886 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 09:01:59.466 +01:00 [INF] Application is shutting down...
+2023-09-02 09:02:03.403 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 09:02:03.447 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 09:02:03.448 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 09:02:03.449 +01:00 [INF] Hosting environment: Development
+2023-09-02 09:02:03.449 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 09:02:04.761 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 09:02:04.814 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 54.0282ms
+2023-09-02 09:02:04.889 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 09:02:04.933 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 44.2666ms
+2023-09-02 09:02:24.457 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=james multipart/form-data;+boundary=----WebKitFormBoundarynRh5nOkAiswCzVDE 50288
+2023-09-02 09:02:24.467 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:02:24.473 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 09:02:24.500 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:02:24.517 +01:00 [INF] Route matched with {action = "UploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:02:24.534 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:02:24.540 +01:00 [INF] Executed action Techie.Controllers.ProductController.UploadImage (Techie) in 21.6654ms
+2023-09-02 09:02:24.541 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:02:24.542 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=james multipart/form-data;+boundary=----WebKitFormBoundarynRh5nOkAiswCzVDE 50288 - 200 - application/json;+charset=utf-8 95.0096ms
+2023-09-02 09:03:47.414 +01:00 [INF] Application is shutting down...
+2023-09-02 09:03:50.415 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 09:03:50.468 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 09:03:50.470 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 09:03:50.470 +01:00 [INF] Hosting environment: Development
+2023-09-02 09:03:50.470 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 09:03:57.069 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=james multipart/form-data;+boundary=----WebKitFormBoundaryhpSm9W5S7sQI1dnY 50288
+2023-09-02 09:03:57.093 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:03:57.095 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 09:03:57.113 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:03:57.123 +01:00 [INF] Route matched with {action = "UploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:03:57.138 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:03:57.147 +01:00 [INF] Executed action Techie.Controllers.ProductController.UploadImage (Techie) in 22.137ms
+2023-09-02 09:03:57.148 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:03:57.149 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=james multipart/form-data;+boundary=----WebKitFormBoundaryhpSm9W5S7sQI1dnY 50288 - 200 - application/json;+charset=utf-8 81.5669ms
+2023-09-02 09:04:29.301 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 09:04:29.369 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 67.9518ms
+2023-09-02 09:04:29.490 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 09:04:29.562 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 72.0025ms
+2023-09-02 09:04:34.706 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage multipart/form-data;+boundary=----WebKitFormBoundaryF7lBxDen96cMtPBo 135
+2023-09-02 09:04:34.712 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:04:34.715 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:04:34.716 +01:00 [INF] Route matched with {action = "UploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:04:34.737 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-02 09:04:34.743 +01:00 [INF] Executed action Techie.Controllers.ProductController.UploadImage (Techie) in 25.998ms
+2023-09-02 09:04:34.744 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:04:34.744 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage multipart/form-data;+boundary=----WebKitFormBoundaryF7lBxDen96cMtPBo 135 - 400 - application/problem+json;+charset=utf-8 38.4334ms
+2023-09-02 09:07:38.986 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundaryBQG1lx9A8drVNHWn 50288
+2023-09-02 09:07:38.994 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:07:39.002 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:07:39.006 +01:00 [INF] Route matched with {action = "UploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:07:39.021 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:07:39.024 +01:00 [INF] Executed action Techie.Controllers.ProductController.UploadImage (Techie) in 17.1902ms
+2023-09-02 09:07:39.025 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:07:39.025 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundaryBQG1lx9A8drVNHWn 50288 - 200 - application/json;+charset=utf-8 38.8934ms
+2023-09-02 09:07:58.415 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundarykOijx4dXbFhEbxvd 50288
+2023-09-02 09:07:58.425 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:07:58.427 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:07:58.428 +01:00 [INF] Route matched with {action = "UploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:07:58.436 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:07:58.440 +01:00 [INF] Executed action Techie.Controllers.ProductController.UploadImage (Techie) in 11.075ms
+2023-09-02 09:07:58.441 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:07:58.443 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundarykOijx4dXbFhEbxvd 50288 - 200 - application/json;+charset=utf-8 28.2049ms
+2023-09-02 09:08:59.329 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 09:08:59.357 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 27.3567ms
+2023-09-02 09:08:59.492 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 09:08:59.509 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 17.2845ms
+2023-09-02 09:09:08.739 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundary0aPnvyfNF0KwscJn 135
+2023-09-02 09:09:08.742 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:09:08.744 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:09:08.745 +01:00 [INF] Route matched with {action = "UploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:09:08.750 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-02 09:09:08.750 +01:00 [INF] Executed action Techie.Controllers.ProductController.UploadImage (Techie) in 4.9951ms
+2023-09-02 09:09:08.750 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:09:08.751 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundary0aPnvyfNF0KwscJn 135 - 400 - application/problem+json;+charset=utf-8 11.5987ms
+2023-09-02 09:09:39.170 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundarypz2L67ICR8TeIGcm 135
+2023-09-02 09:09:39.171 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:09:39.173 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:09:39.174 +01:00 [INF] Route matched with {action = "UploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:09:39.177 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-02 09:09:39.178 +01:00 [INF] Executed action Techie.Controllers.ProductController.UploadImage (Techie) in 3.8576ms
+2023-09-02 09:09:39.178 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:09:39.179 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundarypz2L67ICR8TeIGcm 135 - 400 - application/problem+json;+charset=utf-8 9.4985ms
+2023-09-02 09:09:45.752 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundaryHBW1y0kyoep9bGIu 50288
+2023-09-02 09:09:45.768 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:09:45.772 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:09:45.781 +01:00 [INF] Route matched with {action = "UploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:09:45.786 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:09:45.787 +01:00 [INF] Executed action Techie.Controllers.ProductController.UploadImage (Techie) in 5.1106ms
+2023-09-02 09:09:45.787 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:09:45.787 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundaryHBW1y0kyoep9bGIu 50288 - 200 - application/json;+charset=utf-8 35.3909ms
+2023-09-02 09:10:42.998 +01:00 [INF] Application is shutting down...
+2023-09-02 09:10:47.347 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 09:10:47.401 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 09:10:47.402 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 09:10:47.402 +01:00 [INF] Hosting environment: Development
+2023-09-02 09:10:47.402 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 09:10:48.093 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 09:10:48.148 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 56.5535ms
+2023-09-02 09:10:48.269 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 09:10:48.317 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 48.2999ms
+2023-09-02 09:10:59.096 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Product/GetImage?productcode=001 - -
+2023-09-02 09:10:59.124 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 09:10:59.143 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.GetImage (Techie)'
+2023-09-02 09:10:59.154 +01:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetImage(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:10:59.177 +01:00 [INF] Executing FileContentResult, sending file with download name '' ...
+2023-09-02 09:10:59.184 +01:00 [INF] Executed action Techie.Controllers.ProductController.GetImage (Techie) in 26.5665ms
+2023-09-02 09:10:59.186 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.GetImage (Techie)'
+2023-09-02 09:10:59.186 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/GetImage?productcode=001 - - - 200 50103 image/png 90.0004ms
+2023-09-02 09:11:34.954 +01:00 [INF] Application is shutting down...
+2023-09-02 09:11:39.050 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 09:11:39.100 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 09:11:39.101 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 09:11:39.101 +01:00 [INF] Hosting environment: Development
+2023-09-02 09:11:39.101 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 09:11:39.869 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 09:11:39.929 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 61.1468ms
+2023-09-02 09:11:40.044 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 09:11:40.093 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 49.4735ms
+2023-09-02 09:11:51.212 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5197/api/Product/DeleteImage?productcode=001 - -
+2023-09-02 09:11:51.228 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:11:51.232 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 09:11:51.251 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DeleteImage (Techie)'
+2023-09-02 09:11:51.261 +01:00 [INF] Route matched with {action = "DeleteImage", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteImage(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:11:51.272 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:11:51.276 +01:00 [INF] Executed action Techie.Controllers.ProductController.DeleteImage (Techie) in 13.5678ms
+2023-09-02 09:11:51.278 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DeleteImage (Techie)'
+2023-09-02 09:11:51.278 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5197/api/Product/DeleteImage?productcode=001 - - - 200 - application/json;+charset=utf-8 69.3970ms
+2023-09-02 09:11:56.312 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5197/api/Product/DeleteImage?productcode=001 - -
+2023-09-02 09:11:56.315 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:11:56.316 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DeleteImage (Techie)'
+2023-09-02 09:11:56.321 +01:00 [INF] Route matched with {action = "DeleteImage", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteImage(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:11:56.325 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:11:56.326 +01:00 [INF] Executed action Techie.Controllers.ProductController.DeleteImage (Techie) in 4.3738ms
+2023-09-02 09:11:56.326 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DeleteImage (Techie)'
+2023-09-02 09:11:56.326 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5197/api/Product/DeleteImage?productcode=001 - - - 200 - application/json;+charset=utf-8 14.4313ms
+2023-09-02 09:11:59.672 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5197/api/Product/DeleteImage?productcode=001 - -
+2023-09-02 09:11:59.675 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:11:59.677 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DeleteImage (Techie)'
+2023-09-02 09:11:59.678 +01:00 [INF] Route matched with {action = "DeleteImage", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteImage(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:11:59.679 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:11:59.680 +01:00 [INF] Executed action Techie.Controllers.ProductController.DeleteImage (Techie) in 1.6783ms
+2023-09-02 09:11:59.680 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DeleteImage (Techie)'
+2023-09-02 09:11:59.681 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5197/api/Product/DeleteImage?productcode=001 - - - 200 - application/json;+charset=utf-8 8.6002ms
+2023-09-02 09:12:26.448 +01:00 [INF] Application is shutting down...
+2023-09-02 09:12:29.367 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 09:12:29.417 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 09:12:29.419 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 09:12:29.419 +01:00 [INF] Hosting environment: Development
+2023-09-02 09:12:29.419 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 09:12:29.755 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5197/api/Product/DeleteImage?productcode=001 - -
+2023-09-02 09:12:29.775 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:12:29.777 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 09:12:29.791 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DeleteImage (Techie)'
+2023-09-02 09:12:29.797 +01:00 [INF] Route matched with {action = "DeleteImage", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteImage(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:12:29.805 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:12:29.814 +01:00 [INF] Executed action Techie.Controllers.ProductController.DeleteImage (Techie) in 15.172ms
+2023-09-02 09:12:29.815 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DeleteImage (Techie)'
+2023-09-02 09:12:29.815 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5197/api/Product/DeleteImage?productcode=001 - - - 400 - application/json;+charset=utf-8 61.0755ms
+2023-09-02 09:13:25.053 +01:00 [INF] Application is shutting down...
+2023-09-02 09:13:30.254 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 09:13:30.304 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 09:13:30.305 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 09:13:30.305 +01:00 [INF] Hosting environment: Development
+2023-09-02 09:13:30.305 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 09:13:32.709 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 09:13:32.767 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 59.0235ms
+2023-09-02 09:13:32.939 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 09:13:32.993 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 54.3209ms
+2023-09-02 09:14:03.576 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundaryUG6A46iTNIlozgfr 150779
+2023-09-02 09:14:03.589 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:14:03.593 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 09:14:03.636 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:14:03.654 +01:00 [INF] Route matched with {action = "MultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:14:03.674 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:14:03.681 +01:00 [INF] Executed action Techie.Controllers.ProductController.MultipleUploadImage (Techie) in 25.1885ms
+2023-09-02 09:14:03.683 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:14:03.684 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundaryUG6A46iTNIlozgfr 150779 - 200 - application/json;+charset=utf-8 108.7575ms
+2023-09-02 09:15:14.755 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundarytiJnee7HjbP3WTK9 100805
+2023-09-02 09:15:14.777 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:15:14.781 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:15:14.785 +01:00 [INF] Route matched with {action = "MultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:15:14.793 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:15:14.795 +01:00 [INF] Executed action Techie.Controllers.ProductController.MultipleUploadImage (Techie) in 9.3433ms
+2023-09-02 09:15:14.795 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:15:14.795 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundarytiJnee7HjbP3WTK9 100805 - 200 - application/json;+charset=utf-8 40.6782ms
+2023-09-02 09:15:58.383 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002%2C001 multipart/form-data;+boundary=----WebKitFormBoundaryrmBxEa17AghUHQPr 61032
+2023-09-02 09:15:58.395 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:15:58.399 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:15:58.400 +01:00 [INF] Route matched with {action = "MultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:15:58.404 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:15:58.405 +01:00 [INF] Executed action Techie.Controllers.ProductController.MultipleUploadImage (Techie) in 4.635ms
+2023-09-02 09:15:58.405 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:15:58.406 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002%2C001 multipart/form-data;+boundary=----WebKitFormBoundaryrmBxEa17AghUHQPr 61032 - 200 - application/json;+charset=utf-8 22.6062ms
+2023-09-02 09:16:28.106 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundarypNaPg0UcznE12ya1 61032
+2023-09-02 09:16:28.109 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:16:28.110 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:16:28.112 +01:00 [INF] Route matched with {action = "MultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:16:28.130 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:16:28.131 +01:00 [INF] Executed action Techie.Controllers.ProductController.MultipleUploadImage (Techie) in 18.5235ms
+2023-09-02 09:16:28.131 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:16:28.131 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundarypNaPg0UcznE12ya1 61032 - 200 - application/json;+charset=utf-8 25.5077ms
+2023-09-02 09:21:05.030 +01:00 [INF] Application is shutting down...
+2023-09-02 09:21:09.925 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 09:21:09.975 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 09:21:09.976 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 09:21:09.976 +01:00 [INF] Hosting environment: Development
+2023-09-02 09:21:09.976 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 09:21:14.457 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundaryhU4qpzAL2VpGhUkC 61032
+2023-09-02 09:21:14.491 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:21:14.493 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 09:21:14.506 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:21:14.515 +01:00 [INF] Route matched with {action = "MultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MultipleUploadImage(System.Collections.Generic.List`1[Microsoft.AspNetCore.Http.IFormFile], System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:21:14.528 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:21:14.537 +01:00 [INF] Executed action Techie.Controllers.ProductController.MultipleUploadImage (Techie) in 20.4087ms
+2023-09-02 09:21:14.538 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:21:14.538 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundaryhU4qpzAL2VpGhUkC 61032 - 400 - application/json;+charset=utf-8 83.2228ms
+2023-09-02 09:22:15.550 +01:00 [INF] Application is shutting down...
+2023-09-02 09:22:19.110 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 09:22:19.158 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 09:22:19.159 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 09:22:19.160 +01:00 [INF] Hosting environment: Development
+2023-09-02 09:22:19.160 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 09:22:21.615 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundaryW37BC8ABftmTscto 61032
+2023-09-02 09:22:21.637 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:22:21.639 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 09:22:21.650 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:22:21.658 +01:00 [INF] Route matched with {action = "MultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MultipleUploadImage(System.Collections.Generic.List`1[Microsoft.AspNetCore.Http.IFormFile], System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:22:21.670 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:22:21.678 +01:00 [INF] Executed action Techie.Controllers.ProductController.MultipleUploadImage (Techie) in 18.7934ms
+2023-09-02 09:22:21.679 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:22:21.679 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundaryW37BC8ABftmTscto 61032 - 400 - application/json;+charset=utf-8 65.9811ms
+2023-09-02 09:22:30.795 +01:00 [INF] Application is shutting down...
+2023-09-02 09:22:35.692 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 09:22:35.737 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 09:22:35.738 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 09:22:35.738 +01:00 [INF] Hosting environment: Development
+2023-09-02 09:22:35.738 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 09:22:37.256 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundarypZIliHxpHqDACR67 61032
+2023-09-02 09:22:37.282 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:22:37.284 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 09:22:37.298 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:22:37.307 +01:00 [INF] Route matched with {action = "MultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:22:37.322 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:22:37.330 +01:00 [INF] Executed action Techie.Controllers.ProductController.MultipleUploadImage (Techie) in 21.5969ms
+2023-09-02 09:22:37.331 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:22:37.332 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundarypZIliHxpHqDACR67 61032 - 200 - application/json;+charset=utf-8 77.5162ms
+2023-09-02 09:25:01.932 +01:00 [INF] Application is shutting down...
+2023-09-02 09:25:05.805 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 09:25:05.853 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 09:25:05.854 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 09:25:05.854 +01:00 [INF] Hosting environment: Development
+2023-09-02 09:25:05.855 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 09:25:09.404 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundary14pLKkhjqIaxg5Tp 61032
+2023-09-02 09:25:09.428 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:25:09.429 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 09:25:09.444 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:25:09.452 +01:00 [INF] Route matched with {action = "MultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MultipleUploadImage(System.Collections.Generic.List`1[Microsoft.AspNetCore.Http.IFormFile], System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:25:09.468 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:25:09.476 +01:00 [INF] Executed action Techie.Controllers.ProductController.MultipleUploadImage (Techie) in 22.3647ms
+2023-09-02 09:25:09.477 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:25:09.478 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundary14pLKkhjqIaxg5Tp 61032 - 200 - application/json;+charset=utf-8 75.8503ms
+2023-09-02 09:26:52.776 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=--------------------------391177966491386967279547 6341975
+2023-09-02 09:26:52.865 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/1/2023 5:39:26 PM', Current time: '9/2/2023 8:26:52 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-02 09:26:52.874 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/1/2023 5:39:26 PM', Current time: '9/2/2023 8:26:52 AM'.
+2023-09-02 09:26:52.875 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:26:52.878 +01:00 [INF] Route matched with {action = "MultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MultipleUploadImage(System.Collections.Generic.List`1[Microsoft.AspNetCore.Http.IFormFile], System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:26:52.907 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:26:52.909 +01:00 [INF] Executed action Techie.Controllers.ProductController.MultipleUploadImage (Techie) in 30.7162ms
+2023-09-02 09:26:52.909 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:26:52.912 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=--------------------------391177966491386967279547 6341975 - 400 - application/json;+charset=utf-8 137.0471ms
+2023-09-02 09:26:59.354 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=--------------------------178210258310866356268326 6341969
+2023-09-02 09:26:59.385 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/1/2023 5:39:26 PM', Current time: '9/2/2023 8:26:59 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-02 09:26:59.390 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/1/2023 5:39:26 PM', Current time: '9/2/2023 8:26:59 AM'.
+2023-09-02 09:26:59.390 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:26:59.391 +01:00 [INF] Route matched with {action = "MultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MultipleUploadImage(System.Collections.Generic.List`1[Microsoft.AspNetCore.Http.IFormFile], System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:26:59.412 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:26:59.413 +01:00 [INF] Executed action Techie.Controllers.ProductController.MultipleUploadImage (Techie) in 21.2554ms
+2023-09-02 09:26:59.413 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:26:59.415 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=--------------------------178210258310866356268326 6341969 - 200 - application/json;+charset=utf-8 61.4607ms
+2023-09-02 09:27:15.543 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=--------------------------652990772757577789491792 6341969
+2023-09-02 09:27:15.550 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/1/2023 5:39:26 PM', Current time: '9/2/2023 8:27:15 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-02 09:27:15.552 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/1/2023 5:39:26 PM', Current time: '9/2/2023 8:27:15 AM'.
+2023-09-02 09:27:15.553 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:27:15.554 +01:00 [INF] Route matched with {action = "MultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MultipleUploadImage(System.Collections.Generic.List`1[Microsoft.AspNetCore.Http.IFormFile], System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:27:15.586 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:27:15.587 +01:00 [INF] Executed action Techie.Controllers.ProductController.MultipleUploadImage (Techie) in 32.4926ms
+2023-09-02 09:27:15.587 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:27:15.589 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=--------------------------652990772757577789491792 6341969 - 200 - application/json;+charset=utf-8 46.6589ms
+2023-09-02 09:27:31.000 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=--------------------------968406992259198031493600 6341969
+2023-09-02 09:27:31.019 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/1/2023 5:39:26 PM', Current time: '9/2/2023 8:27:31 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-02 09:27:31.021 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/1/2023 5:39:26 PM', Current time: '9/2/2023 8:27:31 AM'.
+2023-09-02 09:27:31.021 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:27:31.022 +01:00 [INF] Route matched with {action = "MultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MultipleUploadImage(System.Collections.Generic.List`1[Microsoft.AspNetCore.Http.IFormFile], System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:27:31.039 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:27:31.042 +01:00 [INF] Executed action Techie.Controllers.ProductController.MultipleUploadImage (Techie) in 19.9006ms
+2023-09-02 09:27:31.042 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:27:31.044 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=002 multipart/form-data;+boundary=--------------------------968406992259198031493600 6341969 - 200 - application/json;+charset=utf-8 45.3977ms
+2023-09-02 09:38:10.304 +01:00 [INF] Application is shutting down...
+2023-09-02 09:38:14.735 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 09:38:14.787 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 09:38:14.789 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 09:38:14.789 +01:00 [INF] Hosting environment: Development
+2023-09-02 09:38:14.789 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 09:38:16.346 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 09:38:16.395 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 50.0027ms
+2023-09-02 09:38:16.591 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 09:38:16.638 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 47.3459ms
+2023-09-02 09:38:23.672 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundaryYUqqaHbxlHsH7h9F 139
+2023-09-02 09:38:23.678 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:38:23.683 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 09:38:23.714 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:38:23.731 +01:00 [INF] Route matched with {action = "UploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:38:23.746 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-02 09:38:23.751 +01:00 [INF] Executed action Techie.Controllers.ProductController.UploadImage (Techie) in 18.3168ms
+2023-09-02 09:38:23.752 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:38:23.752 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundaryYUqqaHbxlHsH7h9F 139 - 400 - application/problem+json;+charset=utf-8 80.6197ms
+2023-09-02 09:38:33.749 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundaryqrl5DsAaGYhhJjDz 50563
+2023-09-02 09:38:33.772 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:38:33.776 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:38:33.776 +01:00 [INF] Route matched with {action = "UploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:38:33.789 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:38:33.792 +01:00 [INF] Executed action Techie.Controllers.ProductController.UploadImage (Techie) in 15.0909ms
+2023-09-02 09:38:33.792 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:38:33.793 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundaryqrl5DsAaGYhhJjDz 50563 - 200 - application/json;+charset=utf-8 44.4296ms
+2023-09-02 09:38:47.371 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundaryzjaVDrebeN9lmBEM 50563
+2023-09-02 09:38:47.379 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:38:47.384 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:38:47.386 +01:00 [INF] Route matched with {action = "UploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:38:47.394 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:38:47.394 +01:00 [INF] Executed action Techie.Controllers.ProductController.UploadImage (Techie) in 8.1782ms
+2023-09-02 09:38:47.394 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.UploadImage (Techie)'
+2023-09-02 09:38:47.395 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/UploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundaryzjaVDrebeN9lmBEM 50563 - 200 - application/json;+charset=utf-8 24.5421ms
+2023-09-02 09:53:15.058 +01:00 [INF] Application is shutting down...
+2023-09-02 09:53:20.307 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 09:53:20.399 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 09:53:20.401 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 09:53:20.401 +01:00 [INF] Hosting environment: Development
+2023-09-02 09:53:20.401 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 09:53:21.730 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 09:53:21.783 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 55.0890ms
+2023-09-02 09:53:21.931 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 09:53:21.981 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 49.7995ms
+2023-09-02 09:53:43.113 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundaryal6b10VgxzZRO1pu 61050
+2023-09-02 09:53:43.123 +01:00 [INF] CORS policy execution successful.
+2023-09-02 09:53:43.127 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 09:53:43.167 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:53:43.190 +01:00 [INF] Route matched with {action = "MultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 09:53:43.212 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 09:53:43.225 +01:00 [INF] Executed action Techie.Controllers.ProductController.MultipleUploadImage (Techie) in 32.0444ms
+2023-09-02 09:53:43.227 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 09:53:43.227 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundaryal6b10VgxzZRO1pu 61050 - 200 - application/json;+charset=utf-8 114.7211ms
+2023-09-02 10:01:34.094 +01:00 [INF] Application is shutting down...
+2023-09-02 10:01:39.885 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 10:01:39.947 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 10:01:39.948 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 10:01:39.948 +01:00 [INF] Hosting environment: Development
+2023-09-02 10:01:39.948 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 10:01:44.689 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 10:01:44.746 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 59.1262ms
+2023-09-02 10:01:44.940 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 10:01:44.996 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 56.2042ms
+2023-09-02 10:01:55.341 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Product/GetImage?productcode=001 - -
+2023-09-02 10:01:55.360 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 10:01:55.388 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.GetImage (Techie)'
+2023-09-02 10:01:55.398 +01:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetImage(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 10:01:55.407 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-09-02 10:01:55.409 +01:00 [INF] Executed action Techie.Controllers.ProductController.GetImage (Techie) in 9.9482ms
+2023-09-02 10:01:55.410 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.GetImage (Techie)'
+2023-09-02 10:01:55.410 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/GetImage?productcode=001 - - - 200 - text/plain;+charset=utf-8 69.5967ms
+2023-09-02 10:02:00.829 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/Upload/product/001/001.png - -
+2023-09-02 10:02:00.853 +01:00 [INF] Sending file. Request path: '/Upload/product/001/001.png'. Physical path: '/Users/abayomiogunnusi/Desktop/Blog/Techie/wwwroot/Upload/product/001/001.png'
+2023-09-02 10:02:00.854 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/Upload/product/001/001.png - - - 200 50376 image/png 26.9981ms
+2023-09-02 10:02:00.925 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/favicon.ico - -
+2023-09-02 10:02:00.930 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/favicon.ico - - - 404 0 - 4.5508ms
+2023-09-02 10:12:56.530 +01:00 [INF] Application is shutting down...
+2023-09-02 10:13:01.307 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 10:13:01.361 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 10:13:01.362 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 10:13:01.363 +01:00 [INF] Hosting environment: Development
+2023-09-02 10:13:01.363 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 10:13:04.084 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 10:13:04.132 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 49.5258ms
+2023-09-02 10:13:04.376 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 10:13:04.425 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 49.1550ms
+2023-09-02 10:13:11.849 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Product/GetMultipleImage?productcode=001 - -
+2023-09-02 10:13:11.862 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 10:13:11.891 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.GetMultipleImage (Techie)'
+2023-09-02 10:13:11.900 +01:00 [INF] Route matched with {action = "GetMultipleImage", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetMultipleImage(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 10:13:11.910 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-09-02 10:13:11.914 +01:00 [INF] Executed action Techie.Controllers.ProductController.GetMultipleImage (Techie) in 12.1963ms
+2023-09-02 10:13:11.915 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.GetMultipleImage (Techie)'
+2023-09-02 10:13:11.915 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/GetMultipleImage?productcode=001 - - - 200 - application/json;+charset=utf-8 66.0247ms
+2023-09-02 10:13:28.274 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/Upload/product/001/pup2.jpeg - -
+2023-09-02 10:13:28.292 +01:00 [INF] Sending file. Request path: '/Upload/product/001/pup2.jpeg'. Physical path: '/Users/abayomiogunnusi/Desktop/Blog/Techie/wwwroot/Upload/product/001/pup2.jpeg'
+2023-09-02 10:13:28.294 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/Upload/product/001/pup2.jpeg - - - 200 50376 image/jpeg 19.9167ms
+2023-09-02 10:14:15.167 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Product/GetMultipleImage?productcode=002 - -
+2023-09-02 10:14:15.173 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.GetMultipleImage (Techie)'
+2023-09-02 10:14:15.174 +01:00 [INF] Route matched with {action = "GetMultipleImage", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetMultipleImage(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 10:14:15.176 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-09-02 10:14:15.177 +01:00 [INF] Executed action Techie.Controllers.ProductController.GetMultipleImage (Techie) in 2.7791ms
+2023-09-02 10:14:15.177 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.GetMultipleImage (Techie)'
+2023-09-02 10:14:15.178 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/GetMultipleImage?productcode=002 - - - 200 - application/json;+charset=utf-8 10.6220ms
+2023-09-02 10:14:22.552 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Product/GetMultipleImage?productcode=003 - -
+2023-09-02 10:14:22.580 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.GetMultipleImage (Techie)'
+2023-09-02 10:14:22.582 +01:00 [INF] Route matched with {action = "GetMultipleImage", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetMultipleImage(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 10:14:22.586 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-09-02 10:14:22.586 +01:00 [INF] Executed action Techie.Controllers.ProductController.GetMultipleImage (Techie) in 4.5041ms
+2023-09-02 10:14:22.586 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.GetMultipleImage (Techie)'
+2023-09-02 10:14:22.587 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/GetMultipleImage?productcode=003 - - - 200 - application/json;+charset=utf-8 34.3235ms
+2023-09-02 10:14:55.994 +01:00 [INF] Application is shutting down...

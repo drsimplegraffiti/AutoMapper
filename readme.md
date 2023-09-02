@@ -316,3 +316,182 @@ namespace Techie.Container
 
 ###### Install Bcrypt for password hashing
 - dotnet add package BCrypt.Net-Next
+
+
+---
+
+##### Upload file into the server
+```csharp
+
+using Microsoft.AspNetCore.Mvc;
+using Techie.Modal;
+
+namespace Techie.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class ProductController : ControllerBase
+    {
+        private readonly IWebHostEnvironment _env; // IWebHostEnvironment is used to get the path of the wwwroot folder
+        // the wwwroot folder is used to store the images in the project
+        public ProductController(IWebHostEnvironment env)
+        {
+            _env = env;
+        }
+
+        [HttpPut("UploadImage")]
+        public async Task<IActionResult> UploadImage(IFormFile file, string productcode)
+        {
+            ApiResponse response = new ApiResponse();
+            try
+            {
+                if (file == null || file.Length == 0)
+                {
+                    response.ResponseCode = 400; // Bad Request
+                    response.ErrorMessage = "No file uploaded.";
+                    return BadRequest(response);
+                }
+
+                string FilePath = GetFilePath(productcode);
+                if (!Directory.Exists(Path.GetDirectoryName(FilePath)))
+                {
+                    Directory.CreateDirectory(Path.GetDirectoryName(FilePath));
+                }
+
+                using (var stream = new FileStream(FilePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+
+                // Ensure the saved file has a .png extension
+                string extension = Path.GetExtension(FilePath);
+                if (string.IsNullOrEmpty(extension) || !extension.Equals(".png", StringComparison.OrdinalIgnoreCase))
+                {
+                    // Rename the file with a .png extension
+                    string newFilePath = Path.ChangeExtension(FilePath, ".png");
+                    System.IO.File.Move(FilePath, newFilePath);
+                    FilePath = newFilePath;
+                }
+
+                response.ResponseCode = 200;
+                response.Result = "Image uploaded successfully";
+            }
+            catch (Exception ex)
+            {
+                response.ResponseCode = 500; // Internal Server Error
+                response.ErrorMessage = ex.Message;
+            }
+
+            return Ok(response);
+        }
+
+        [NonAction] // This method will not be exposed to the client, it is the same as [ApiExplorerSettings(IgnoreApi = true)]
+        private string GetFilePath(string productcode)
+        {
+            // Ensure the file has a .png extension
+            if (!productcode.EndsWith(".png", StringComparison.OrdinalIgnoreCase))
+            {
+                productcode = Path.ChangeExtension(productcode, ".png");
+            }
+
+            string FilePath = Path.Combine(_env.WebRootPath, "Upload", "product", productcode);
+            return FilePath;
+        }
+
+    }
+}
+```
+
+
+Method 2
+```csharp
+
+using Microsoft.AspNetCore.Mvc;
+using Techie.Modal;
+
+namespace Techie.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class ProductController : ControllerBase
+    {
+        private readonly IWebHostEnvironment _env; // IWebHostEnvironment is used to get the path of the wwwroot folder
+        // the wwwroot folder is used to store the images in the project
+        public ProductController(IWebHostEnvironment env)
+        {
+            _env = env;
+        }
+
+        [HttpPut("UploadImage")]
+        public async Task<IActionResult> UploadImage(IFormFile formFile, string productcode){
+            ApiResponse response = new ApiResponse();
+            try
+            {
+                // string filePath   = Path.Combine(_env.WebRootPath, "Upload", "product", formFile.FileName);
+                string filePath   = GetFilePath(productcode);
+                if(!Directory.Exists(filePath)){
+                    Directory.CreateDirectory(filePath);
+                }
+                string imagePath = filePath + "/" + productcode + ".png";
+                // check if the file exists
+                if(System.IO.File.Exists(imagePath)){
+                    System.IO.File.Delete(imagePath);
+                }
+                // save and store the image
+                using(var stream = new FileStream(imagePath, FileMode.Create)){
+                    await formFile.CopyToAsync(stream);
+                    response.Result = "Image Uploaded Successfully";
+                    response.ResponseCode = 200;
+                }
+            }
+            catch (Exception ex)
+            {
+                response.ErrorMessage = ex.Message;
+            }
+            return Ok(response);
+        }
+
+         [HttpPut("MultipleUploadImage")]
+        public async Task<IActionResult> MultipleUploadImage(IFormFileCollection fileCollection, string productcode){
+            ApiResponse response = new ApiResponse();
+            int passcount = 0; int errorcount = 0;
+            try
+            {
+                // string filePath   = Path.Combine(_env.WebRootPath, "Upload", "product", formFile.FileName);
+                string filePath   = GetFilePath(productcode);
+                if(!Directory.Exists(filePath)){
+                    Directory.CreateDirectory(filePath);
+                }
+              
+                foreach (var file in fileCollection)
+                {
+                      string imagePath = filePath + "/" + file.FileName;
+                // check if the file exists
+                if(System.IO.File.Exists(imagePath)){
+                    System.IO.File.Delete(imagePath);
+                }
+                  // save and store the image
+                using(var stream = new FileStream(imagePath, FileMode.Create)){
+                    await file.CopyToAsync(stream);
+                    passcount++;
+                }
+                }
+              
+            }
+            catch (Exception ex)
+            {
+                errorcount++;
+                response.ErrorMessage = ex.Message;
+            }
+            response.Result = $"{passcount} Image(s) Uploaded Successfully and {errorcount} Image(s) Failed";
+            return Ok(response);
+        }
+
+        [NonAction] // this is same as [ApiExplorerSettings(IgnoreApi = true)]
+        private string GetFilePath(string productcode){
+            return Path.Combine(_env.WebRootPath, "Upload", "product", productcode);
+        }
+
+    }
+}
+```
