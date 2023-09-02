@@ -2456,3 +2456,103 @@ WHERE [c].[Id] = @__id_0
 2023-09-02 13:41:53.293 +01:00 [INF] Executed endpoint 'HTTP: GET /getcustomer/{id}'
 2023-09-02 13:41:53.296 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/getcustomer/86 - - - 404 - application/json;+charset=utf-8 585.6701ms
 2023-09-02 13:46:36.494 +01:00 [INF] Application is shutting down...
+2023-09-02 13:47:11.124 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 13:47:11.176 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 13:47:11.177 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 13:47:11.177 +01:00 [INF] Hosting environment: Development
+2023-09-02 13:47:11.177 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 13:47:54.400 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/ - -
+2023-09-02 13:47:54.492 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 13:47:54.515 +01:00 [INF] Executing endpoint 'HTTP: GET /'
+2023-09-02 13:47:54.516 +01:00 [INF] Executed endpoint 'HTTP: GET /'
+2023-09-02 13:47:54.517 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/ - - - 200 - text/plain;+charset=utf-8 118.1632ms
+2023-09-02 13:47:59.540 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 13:47:59.612 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 72.4101ms
+2023-09-02 13:47:59.750 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 13:47:59.823 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 72.2681ms
+2023-09-02 13:48:14.989 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5197/addcustomer application/json 259
+2023-09-02 13:48:15.013 +01:00 [INF] CORS policy execution successful.
+2023-09-02 13:48:15.016 +01:00 [INF] Executing endpoint 'HTTP: POST /addcustomer'
+2023-09-02 13:48:15.530 +01:00 [INF] Executed DbCommand (45ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = DateTime), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (DbType = Boolean), @p5='?' (Size = 50) (DbType = AnsiString), @p6='?' (Size = 50) (DbType = AnsiString), @p7='?' (Size = 50) (DbType = AnsiString), @p8='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customer] ([Code], [CreatedDate], [Creditlimit], [Email], [IsActive], [Name], [PhoneNumber], [TaxCode], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2023-09-02 13:48:15.549 +01:00 [INF] Setting HTTP status code 200.
+2023-09-02 13:48:15.549 +01:00 [INF] Writing value of type 'String' as Json.
+2023-09-02 13:48:15.550 +01:00 [INF] Executed endpoint 'HTTP: POST /addcustomer'
+2023-09-02 13:48:15.552 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/addcustomer application/json 259 - 200 - application/json;+charset=utf-8 564.1672ms
+2023-09-02 13:48:36.735 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/getcustomer - -
+2023-09-02 13:48:36.742 +01:00 [INF] Executing endpoint 'HTTP: GET /getcustomer'
+2023-09-02 13:48:36.875 +01:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-02 13:48:36.880 +01:00 [INF] Setting HTTP status code 200.
+2023-09-02 13:48:36.880 +01:00 [INF] Writing value of type 'List`1' as Json.
+2023-09-02 13:48:36.882 +01:00 [INF] Executed endpoint 'HTTP: GET /getcustomer'
+2023-09-02 13:48:36.882 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/getcustomer - - - 200 - application/json;+charset=utf-8 148.0903ms
+2023-09-02 13:49:42.522 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/export - -
+2023-09-02 13:49:42.563 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 13:49:42.579 +01:00 [INF] Route matched with {action = "ExportToExcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportToExcel() on controller Techie.Container.CustomerController (Techie).
+2023-09-02 13:49:42.631 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-02 13:49:43.067 +01:00 [INF] Executing FileContentResult, sending file with download name 'CustomerInfo.xlsx' ...
+2023-09-02 13:49:43.072 +01:00 [INF] Executed action Techie.Container.CustomerController.ExportToExcel (Techie) in 490.9987ms
+2023-09-02 13:49:43.072 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 13:49:43.073 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/export - - - 200 7062 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 551.7273ms
+2023-09-02 13:51:29.097 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/updatecustomer/6 application/json 246
+2023-09-02 13:51:29.115 +01:00 [INF] CORS policy execution successful.
+2023-09-02 13:51:29.118 +01:00 [INF] Executing endpoint 'HTTP: PUT /updatecustomer/{id}'
+2023-09-02 13:51:29.221 +01:00 [INF] Executed DbCommand (23ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+WHERE [c].[Id] = @__id_0
+2023-09-02 13:51:29.326 +01:00 [INF] Executed DbCommand (96ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (Size = 50) (DbType = AnsiString), @p3='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Customer] SET [Code] = @p0, [Name] = @p1, [PhoneNumber] = @p2, [UpdatedDate] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2023-09-02 13:51:29.328 +01:00 [INF] Setting HTTP status code 200.
+2023-09-02 13:51:29.328 +01:00 [INF] Writing value of type 'String' as Json.
+2023-09-02 13:51:29.330 +01:00 [INF] Executed endpoint 'HTTP: PUT /updatecustomer/{id}'
+2023-09-02 13:51:29.331 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/updatecustomer/6 application/json 246 - 200 - application/json;+charset=utf-8 234.7575ms
+2023-09-02 13:51:34.060 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/getcustomer - -
+2023-09-02 13:51:34.065 +01:00 [INF] Executing endpoint 'HTTP: GET /getcustomer'
+2023-09-02 13:51:34.099 +01:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-02 13:51:34.101 +01:00 [INF] Setting HTTP status code 200.
+2023-09-02 13:51:34.101 +01:00 [INF] Writing value of type 'List`1' as Json.
+2023-09-02 13:51:34.102 +01:00 [INF] Executed endpoint 'HTTP: GET /getcustomer'
+2023-09-02 13:51:34.103 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/getcustomer - - - 200 - application/json;+charset=utf-8 43.3644ms
+2023-09-02 14:01:23.971 +01:00 [INF] Application is shutting down...
+2023-09-02 14:01:28.643 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 14:01:28.697 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 14:01:28.698 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 14:01:28.698 +01:00 [INF] Hosting environment: Development
+2023-09-02 14:01:28.698 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 14:01:31.912 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 14:01:31.982 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 70.8315ms
+2023-09-02 14:01:32.125 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 14:01:32.186 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 60.1508ms
+2023-09-02 14:01:38.089 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/export - -
+2023-09-02 14:01:38.119 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 14:01:38.141 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 14:01:38.148 +01:00 [INF] Route matched with {action = "ExportToExcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportToExcel() on controller Techie.Container.CustomerController (Techie).
+2023-09-02 14:01:38.663 +01:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-02 14:01:39.112 +01:00 [INF] Executing FileContentResult, sending file with download name 'CustomerInfo.xlsx' ...
+2023-09-02 14:01:39.114 +01:00 [INF] Executed action Techie.Container.CustomerController.ExportToExcel (Techie) in 964.7561ms
+2023-09-02 14:01:39.115 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 14:01:39.117 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/export - - - 200 7209 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 1028.7446ms
+2023-09-02 14:02:30.734 +01:00 [INF] Application is shutting down...
+2023-09-02 14:02:34.623 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 14:02:34.675 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 14:02:34.676 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 14:02:34.676 +01:00 [INF] Hosting environment: Development
+2023-09-02 14:02:34.676 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 14:03:17.519 +01:00 [INF] Application is shutting down...

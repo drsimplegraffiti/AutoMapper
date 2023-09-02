@@ -1,4 +1,4 @@
-﻿##### EF, AutoMapper, Logging with Serilog, RateLimting, Cors, Basic Authenticartion
+﻿##### EF, AutoMapper, Logging with Serilog, RateLimting, Cors, Basic Authenticartion, Common Http Response,authentication (basic, jwt and refresh token), image handling (upload and download), generate excel, send email, minimal api
 
 ##### Entity framework
 
