@@ -11,6 +11,7 @@ using Techie.Container;
 using Techie.Helper;
 using Techie.Modal;
 using Techie.Repos;
+using Techie.Repos.Models;
 using Techie.Service;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -85,6 +86,64 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+// minimal api
+app.MapGet("/", () => "Hello World!");
+//http://localhost:5197/getchannel?channelname=bill
+app.MapGet("/getchannel", (string channelname) => $"Welcome to {channelname} channel")
+    .WithOpenApi(opt =>
+    {   
+        var param = opt.Parameters[0];
+        param.Description = "Name of the channel";
+        return opt;
+    });
+
+app.MapGet("/getcustomer", async(LearnDataContext _context) => {
+    var data = await _context.Customers.ToListAsync();
+    return Results.Ok(data);
+});
+
+// get customer by id
+app.MapGet("/getcustomer/{id}", async(LearnDataContext _context, int id) => {
+    var data = await _context.Customers.FirstOrDefaultAsync(item => item.Id == id);
+    if (data == null)
+        return Results.NotFound("No data found");
+    return Results.Ok(data);
+});
+
+// add customer
+app.MapPost("/addcustomer", async(LearnDataContext _context, Customer customer) => {
+    await _context.Customers.AddAsync(customer);
+    await _context.SaveChangesAsync();
+    return Results.Ok("Added successfully");
+});
+
+// update customer
+app.MapPut("/updatecustomer/{id}", async(LearnDataContext _context, Customer customer, int id) => {
+    var data = await _context.Customers.FirstOrDefaultAsync(item => item.Id == id);
+    if (data == null)
+        return Results.NotFound("No data found");
+    data.Name = customer.Name;
+    data.Email = customer.Email;
+    data.UpdatedDate = customer.UpdatedDate;
+    data.Creditlimit = customer.Creditlimit;
+    data.Code = customer.Code;
+    data.PhoneNumber = customer.PhoneNumber;
+    data.TaxCode = customer.TaxCode;
+    await _context.SaveChangesAsync();
+    return Results.Ok("Updated successfully");
+});
+
+// delete customer
+app.MapDelete("/deletecustomer/{id}", async(LearnDataContext _context, int id) => {
+    var data = await _context.Customers.FirstOrDefaultAsync(item => item.Id == id);
+    if (data == null)
+        return Results.NotFound("No data found");
+    _context.Customers.Remove(data);
+    await _context.SaveChangesAsync();
+    return Results.Ok("Deleted successfully");
+});
+
 app.UseRateLimiter();
 
 // Configure the HTTP request pipeline.
