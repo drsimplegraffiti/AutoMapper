@@ -312,3 +312,7 @@ namespace Techie.Container
 
 ##### For JWT Authentication install the following packages
 - dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+
+
+###### Install Bcrypt for password hashing
+- dotnet add package BCrypt.Net-Next

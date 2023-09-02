@@ -3909,3 +3909,8 @@ WHERE [userid] = @p2;
 2023-09-01 21:19:50.905 +01:00 [INF] Executed endpoint 'Techie.Controllers.AuthorizeController.RefreshToken (Techie)'
 2023-09-01 21:19:50.905 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Authorize/RefreshToken application/json 298 - 200 - application/json;+charset=utf-8 154.2098ms
 2023-09-01 21:20:05.282 +01:00 [INF] Application is shutting down...
+2023-09-01 21:21:54.210 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-01 21:21:54.289 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-01 21:21:54.291 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-01 21:21:54.291 +01:00 [INF] Hosting environment: Development
+2023-09-01 21:21:54.291 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
