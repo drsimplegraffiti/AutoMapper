@@ -43,7 +43,6 @@ namespace Techie.Controllers
             if (user == null)
                 return NotFound("Invalid username or password");
             var password = BCrypt.Net.BCrypt.Verify(userCred.Password, user.Password);
-          
             if (!password)
                 return NotFound("Invalid username or password");
             var token = GenerateToken(user);
@@ -134,9 +133,12 @@ namespace Techie.Controllers
         // bcrypt password hashing
         private string HashPassword(string password)
         {
-            return BCrypt.Net.BCrypt.HashPassword(password);
-        }
+            // Generate a random salt
+            string salt = BCrypt.Net.BCrypt.GenerateSalt();
 
+            // Hash the password with the generated salt
+            return BCrypt.Net.BCrypt.HashPassword(password, salt);
+        }
 
 
         private string GenerateToken(User user)

@@ -1185,3 +1185,1155 @@ Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime
 2023-09-02 10:14:22.586 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.GetMultipleImage (Techie)'
 2023-09-02 10:14:22.587 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/GetMultipleImage?productcode=003 - - - 200 - application/json;+charset=utf-8 34.3235ms
 2023-09-02 10:14:55.994 +01:00 [INF] Application is shutting down...
+2023-09-02 10:19:42.934 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 10:19:42.986 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 10:19:42.987 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 10:19:42.987 +01:00 [INF] Hosting environment: Development
+2023-09-02 10:19:42.988 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 10:19:52.827 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 10:19:52.880 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 55.2527ms
+2023-09-02 10:19:53.058 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 10:19:53.106 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 47.0880ms
+2023-09-02 10:19:59.878 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Product/download?productcode=002 - -
+2023-09-02 10:19:59.887 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 10:19:59.910 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.Download (Techie)'
+2023-09-02 10:19:59.924 +01:00 [INF] Route matched with {action = "Download", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Download(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 10:19:59.937 +01:00 [INF] Executing FileStreamResult, sending file with download name '002.png' ...
+2023-09-02 10:19:59.941 +01:00 [INF] Executed action Techie.Controllers.ProductController.Download (Techie) in 14.9583ms
+2023-09-02 10:19:59.942 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.Download (Techie)'
+2023-09-02 10:19:59.943 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/download?productcode=002 - - - 200 50376 image/png 65.1547ms
+2023-09-02 10:22:49.771 +01:00 [INF] Application is shutting down...
+2023-09-02 10:22:53.898 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 10:22:53.961 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 10:22:53.962 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 10:22:53.962 +01:00 [INF] Hosting environment: Development
+2023-09-02 10:22:53.962 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 10:22:54.108 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 10:22:54.153 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 45.7383ms
+2023-09-02 10:22:54.298 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 10:22:54.353 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 54.8259ms
+2023-09-02 10:23:02.114 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Product/remove?productcode=001 - -
+2023-09-02 10:23:02.140 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 10:23:02.162 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.Remove (Techie)'
+2023-09-02 10:23:02.175 +01:00 [INF] Route matched with {action = "Remove", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Remove(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 10:23:02.186 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-09-02 10:23:02.189 +01:00 [INF] Executed action Techie.Controllers.ProductController.Remove (Techie) in 11.4727ms
+2023-09-02 10:23:02.190 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.Remove (Techie)'
+2023-09-02 10:23:02.190 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/remove?productcode=001 - - - 200 - text/plain;+charset=utf-8 76.8475ms
+2023-09-02 10:23:15.539 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Product/remove?productcode=008 - -
+2023-09-02 10:23:15.566 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.Remove (Techie)'
+2023-09-02 10:23:15.567 +01:00 [INF] Route matched with {action = "Remove", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Remove(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 10:23:15.573 +01:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-09-02 10:23:15.578 +01:00 [INF] Executed action Techie.Controllers.ProductController.Remove (Techie) in 10.3252ms
+2023-09-02 10:23:15.578 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.Remove (Techie)'
+2023-09-02 10:23:15.578 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/remove?productcode=008 - - - 404 - application/problem+json;+charset=utf-8 39.9434ms
+2023-09-02 10:23:20.730 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Product/remove?productcode=002 - -
+2023-09-02 10:23:20.741 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.Remove (Techie)'
+2023-09-02 10:23:20.741 +01:00 [INF] Route matched with {action = "Remove", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Remove(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 10:23:20.743 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-09-02 10:23:20.743 +01:00 [INF] Executed action Techie.Controllers.ProductController.Remove (Techie) in 1.2664ms
+2023-09-02 10:23:20.743 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.Remove (Techie)'
+2023-09-02 10:23:20.743 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/remove?productcode=002 - - - 200 - text/plain;+charset=utf-8 14.2766ms
+2023-09-02 10:23:27.748 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Product/remove?productcode=pup - -
+2023-09-02 10:23:27.758 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.Remove (Techie)'
+2023-09-02 10:23:27.759 +01:00 [INF] Route matched with {action = "Remove", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Remove(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 10:23:27.761 +01:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-09-02 10:23:27.762 +01:00 [INF] Executed action Techie.Controllers.ProductController.Remove (Techie) in 2.6717ms
+2023-09-02 10:23:27.762 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.Remove (Techie)'
+2023-09-02 10:23:27.762 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/remove?productcode=pup - - - 404 - application/problem+json;+charset=utf-8 14.6117ms
+2023-09-02 10:27:31.071 +01:00 [INF] Application is shutting down...
+2023-09-02 10:27:35.889 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 10:27:35.938 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 10:27:35.940 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 10:27:35.940 +01:00 [INF] Hosting environment: Development
+2023-09-02 10:27:35.940 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 10:27:37.670 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 10:27:37.726 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 57.5128ms
+2023-09-02 10:27:37.855 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 10:27:37.910 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 54.3974ms
+2023-09-02 10:27:46.883 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Product/multiremove?productcode=001 - -
+2023-09-02 10:27:46.896 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 10:27:46.921 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.Multiremove (Techie)'
+2023-09-02 10:27:46.936 +01:00 [INF] Route matched with {action = "Multiremove", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Multiremove(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 10:27:46.947 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-09-02 10:27:46.949 +01:00 [INF] Executed action Techie.Controllers.ProductController.Multiremove (Techie) in 10.6275ms
+2023-09-02 10:27:46.950 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.Multiremove (Techie)'
+2023-09-02 10:27:46.950 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/multiremove?productcode=001 - - - 200 - text/plain;+charset=utf-8 70.3268ms
+2023-09-02 10:28:23.471 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=003 multipart/form-data;+boundary=----WebKitFormBoundaryDppUjVCwBRg5Hkco 101091
+2023-09-02 10:28:23.480 +01:00 [INF] CORS policy execution successful.
+2023-09-02 10:28:23.497 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 10:28:23.506 +01:00 [INF] Route matched with {action = "MultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 10:28:23.525 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 10:28:23.531 +01:00 [INF] Executed action Techie.Controllers.ProductController.MultipleUploadImage (Techie) in 24.3879ms
+2023-09-02 10:28:23.531 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.MultipleUploadImage (Techie)'
+2023-09-02 10:28:23.533 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/MultipleUploadImage?productcode=003 multipart/form-data;+boundary=----WebKitFormBoundaryDppUjVCwBRg5Hkco 101091 - 200 - application/json;+charset=utf-8 62.2381ms
+2023-09-02 10:28:36.833 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Product/multiremove?productcode=003 - -
+2023-09-02 10:28:36.846 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.Multiremove (Techie)'
+2023-09-02 10:28:36.847 +01:00 [INF] Route matched with {action = "Multiremove", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Multiremove(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 10:28:36.850 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-09-02 10:28:36.850 +01:00 [INF] Executed action Techie.Controllers.ProductController.Multiremove (Techie) in 2.8265ms
+2023-09-02 10:28:36.850 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.Multiremove (Techie)'
+2023-09-02 10:28:36.850 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/multiremove?productcode=003 - - - 200 - text/plain;+charset=utf-8 17.7119ms
+2023-09-02 10:29:59.962 +01:00 [INF] Application is shutting down...
+2023-09-02 10:30:05.153 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 10:30:05.215 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 10:30:05.216 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 10:30:05.216 +01:00 [INF] Hosting environment: Development
+2023-09-02 10:30:05.216 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 10:30:05.916 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 10:30:05.968 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 52.7324ms
+2023-09-02 10:30:06.113 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 10:30:06.159 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 45.8623ms
+2023-09-02 10:30:13.850 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5197/api/Product/remove?productcode=001 - -
+2023-09-02 10:30:13.868 +01:00 [INF] CORS policy execution successful.
+2023-09-02 10:30:13.873 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 10:30:13.896 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.Remove (Techie)'
+2023-09-02 10:30:13.909 +01:00 [INF] Route matched with {action = "Remove", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Remove(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 10:30:13.918 +01:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-09-02 10:30:13.923 +01:00 [INF] Executed action Techie.Controllers.ProductController.Remove (Techie) in 11.75ms
+2023-09-02 10:30:13.924 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.Remove (Techie)'
+2023-09-02 10:30:13.924 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5197/api/Product/remove?productcode=001 - - - 404 - application/problem+json;+charset=utf-8 74.0961ms
+2023-09-02 10:40:39.713 +01:00 [INF] Application is shutting down...
+2023-09-02 10:54:32.297 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 10:54:32.353 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 10:54:32.354 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 10:54:32.354 +01:00 [INF] Hosting environment: Development
+2023-09-02 10:54:32.354 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 10:54:34.588 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 10:54:34.652 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 65.3472ms
+2023-09-02 10:54:35.101 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 10:54:35.145 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 44.0345ms
+2023-09-02 10:55:02.247 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundaryUEdfva7ymxsdrkLx 101091
+2023-09-02 10:55:02.259 +01:00 [INF] CORS policy execution successful.
+2023-09-02 10:55:02.263 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 10:55:02.284 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 10:55:02.301 +01:00 [INF] Route matched with {action = "DBMultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 10:55:02.806 +01:00 [INF] Executed DbCommand (95ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductImage] ([id], [productcode], [productimage])
+VALUES (@p0, @p1, @p2);
+2023-09-02 10:55:02.820 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 10:55:02.824 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBMultipleUploadImage (Techie) in 521.939ms
+2023-09-02 10:55:02.824 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 10:55:02.827 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundaryUEdfva7ymxsdrkLx 101091 - 200 - application/json;+charset=utf-8 581.9367ms
+2023-09-02 10:56:19.877 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 10:56:19.885 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 8.6511ms
+2023-09-02 10:56:19.988 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 10:56:20.008 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 19.2940ms
+2023-09-02 10:56:42.345 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundaryQFbYythV0RO8st4K 101091
+2023-09-02 10:56:42.353 +01:00 [INF] CORS policy execution successful.
+2023-09-02 10:56:42.356 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 10:56:42.357 +01:00 [INF] Route matched with {action = "DBMultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 10:56:42.477 +01:00 [ERR] Failed executing DbCommand (74ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductImage] ([id], [productcode], [productimage])
+VALUES (@p0, @p1, @p2);
+2023-09-02 10:56:42.501 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'Techie.Repos.LearnDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_ProductImage'. Cannot insert duplicate key in object 'dbo.ProductImage'. The duplicate key value is (0).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:b9315597-d17a-4ee8-889a-d9340195a49a
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_ProductImage'. Cannot insert duplicate key in object 'dbo.ProductImage'. The duplicate key value is (0).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:b9315597-d17a-4ee8-889a-d9340195a49a
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-09-02 10:56:42.504 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 10:56:42.504 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBMultipleUploadImage (Techie) in 146.9015ms
+2023-09-02 10:56:42.504 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 10:56:42.504 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundaryQFbYythV0RO8st4K 101091 - 200 - application/json;+charset=utf-8 160.1907ms
+2023-09-02 10:56:56.039 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=002 - -
+2023-09-02 10:56:56.071 +01:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-09-02 10:56:56.071 +01:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-09-02 10:56:56.072 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=002 - - - 405 0 - 32.8905ms
+2023-09-02 10:59:20.296 +01:00 [INF] Application is shutting down...
+2023-09-02 10:59:24.353 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 10:59:24.405 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 10:59:24.406 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 10:59:24.406 +01:00 [INF] Hosting environment: Development
+2023-09-02 10:59:24.406 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 10:59:28.104 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 10:59:28.163 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 60.4897ms
+2023-09-02 10:59:28.290 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 10:59:28.343 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 52.7681ms
+2023-09-02 10:59:56.332 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=004 multipart/form-data;+boundary=----WebKitFormBoundaryzPdbwDe77j5Ayowq 61050
+2023-09-02 10:59:56.356 +01:00 [INF] CORS policy execution successful.
+2023-09-02 10:59:56.361 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 10:59:56.391 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 10:59:56.408 +01:00 [INF] Route matched with {action = "DBMultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 10:59:56.859 +01:00 [ERR] Failed executing DbCommand (38ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductImage] ([id], [productcode], [productimage])
+VALUES (@p0, @p1, @p2);
+2023-09-02 10:59:56.879 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'Techie.Repos.LearnDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_ProductImage'. Cannot insert duplicate key in object 'dbo.ProductImage'. The duplicate key value is (0).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:eec9c098-66d3-4a39-afbd-c2748c542f9f
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_ProductImage'. Cannot insert duplicate key in object 'dbo.ProductImage'. The duplicate key value is (0).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:eec9c098-66d3-4a39-afbd-c2748c542f9f
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-09-02 10:59:56.883 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 10:59:56.887 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBMultipleUploadImage (Techie) in 477.328ms
+2023-09-02 10:59:56.887 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 10:59:56.890 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=004 multipart/form-data;+boundary=----WebKitFormBoundaryzPdbwDe77j5Ayowq 61050 - 200 - application/json;+charset=utf-8 558.1563ms
+2023-09-02 11:01:00.125 +01:00 [INF] Application is shutting down...
+2023-09-02 11:01:15.698 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 11:01:15.766 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 11:01:15.767 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 11:01:15.767 +01:00 [INF] Hosting environment: Development
+2023-09-02 11:01:15.767 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 11:01:20.462 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 11:01:20.516 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 61.3087ms
+2023-09-02 11:01:20.608 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 11:01:20.656 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 48.2132ms
+2023-09-02 11:01:40.746 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=005 multipart/form-data;+boundary=----WebKitFormBoundaryAEoE0KaJ8vFtKGVN 101091
+2023-09-02 11:01:40.775 +01:00 [INF] CORS policy execution successful.
+2023-09-02 11:01:40.777 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 11:01:40.799 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:01:40.814 +01:00 [INF] Route matched with {action = "DBMultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 11:01:41.392 +01:00 [INF] Executed DbCommand (124ms) [Parameters=[@__productcode_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[id], [p].[productcode], [p].[productimage]
+FROM [ProductImage] AS [p]
+WHERE [p].[productcode] = @__productcode_0
+2023-09-02 11:01:41.453 +01:00 [ERR] Failed executing DbCommand (12ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductImage] ([id], [productcode], [productimage])
+VALUES (@p0, @p1, @p2);
+2023-09-02 11:01:41.466 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'Techie.Repos.LearnDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_ProductImage'. Cannot insert duplicate key in object 'dbo.ProductImage'. The duplicate key value is (0).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:f83e557b-766d-4730-a9e6-5642f663a317
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_ProductImage'. Cannot insert duplicate key in object 'dbo.ProductImage'. The duplicate key value is (0).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:f83e557b-766d-4730-a9e6-5642f663a317
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-09-02 11:01:41.470 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 11:01:41.474 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBMultipleUploadImage (Techie) in 658.4316ms
+2023-09-02 11:01:41.475 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:01:41.477 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=005 multipart/form-data;+boundary=----WebKitFormBoundaryAEoE0KaJ8vFtKGVN 101091 - 200 - application/json;+charset=utf-8 732.0498ms
+2023-09-02 11:03:49.441 +01:00 [INF] Application is shutting down...
+2023-09-02 11:03:53.726 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 11:03:53.777 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 11:03:53.778 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 11:03:53.779 +01:00 [INF] Hosting environment: Development
+2023-09-02 11:03:53.779 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 11:03:55.380 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 11:03:55.434 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 55.4170ms
+2023-09-02 11:03:55.515 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 11:03:55.562 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 46.6940ms
+2023-09-02 11:04:11.856 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundaryMIF7f4nEBqWPzDLA 101088
+2023-09-02 11:04:11.879 +01:00 [INF] CORS policy execution successful.
+2023-09-02 11:04:11.884 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 11:04:11.912 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:04:11.927 +01:00 [INF] Route matched with {action = "DBMultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 11:04:12.170 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 11:04:12.173 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBMultipleUploadImage (Techie) in 245.0332ms
+2023-09-02 11:04:12.174 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:04:12.177 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=002 multipart/form-data;+boundary=----WebKitFormBoundaryMIF7f4nEBqWPzDLA 101088 - 200 - application/json;+charset=utf-8 322.0860ms
+2023-09-02 11:04:35.835 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=004 multipart/form-data;+boundary=----WebKitFormBoundarySEfASqkMDMqHCdQ1 101091
+2023-09-02 11:04:35.860 +01:00 [INF] CORS policy execution successful.
+2023-09-02 11:04:35.862 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:04:35.863 +01:00 [INF] Route matched with {action = "DBMultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 11:04:35.897 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 11:04:35.898 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBMultipleUploadImage (Techie) in 34.0442ms
+2023-09-02 11:04:35.898 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:04:35.898 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=004 multipart/form-data;+boundary=----WebKitFormBoundarySEfASqkMDMqHCdQ1 101091 - 200 - application/json;+charset=utf-8 63.5972ms
+2023-09-02 11:06:31.352 +01:00 [INF] Application is shutting down...
+2023-09-02 11:06:35.971 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 11:06:36.022 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 11:06:36.023 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 11:06:36.023 +01:00 [INF] Hosting environment: Development
+2023-09-02 11:06:36.023 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 11:06:37.376 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 11:06:37.429 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 56.7344ms
+2023-09-02 11:06:37.525 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 11:06:37.571 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 45.2887ms
+2023-09-02 11:06:47.068 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=008 multipart/form-data;+boundary=----WebKitFormBoundaryIqccjxxHXyThaVjY 151
+2023-09-02 11:06:47.075 +01:00 [INF] CORS policy execution successful.
+2023-09-02 11:06:47.079 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 11:06:47.100 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:06:47.113 +01:00 [INF] Route matched with {action = "DBMultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 11:06:47.183 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-09-02 11:06:47.184 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBMultipleUploadImage (Techie) in 69.587ms
+2023-09-02 11:06:47.185 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:06:47.186 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=008 multipart/form-data;+boundary=----WebKitFormBoundaryIqccjxxHXyThaVjY 151 - 400 - text/plain;+charset=utf-8 118.7053ms
+2023-09-02 11:07:05.291 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=008 multipart/form-data;+boundary=----WebKitFormBoundaryI2LqXA2cuue4jH06 10525
+2023-09-02 11:07:05.298 +01:00 [INF] CORS policy execution successful.
+2023-09-02 11:07:05.300 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:07:05.301 +01:00 [INF] Route matched with {action = "DBMultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 11:07:05.728 +01:00 [ERR] Failed executing DbCommand (38ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductImage] ([id], [productcode], [productimage])
+VALUES (@p0, @p1, @p2);
+2023-09-02 11:07:05.741 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'Techie.Repos.LearnDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_ProductImage'. Cannot insert duplicate key in object 'dbo.ProductImage'. The duplicate key value is (0).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7a283540-0b2a-4e8b-892b-17cf2a0f6ded
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_ProductImage'. Cannot insert duplicate key in object 'dbo.ProductImage'. The duplicate key value is (0).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7a283540-0b2a-4e8b-892b-17cf2a0f6ded
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-09-02 11:07:05.760 +01:00 [INF] Executing ObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 11:07:05.762 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBMultipleUploadImage (Techie) in 461.4657ms
+2023-09-02 11:07:05.763 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:07:05.765 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=008 multipart/form-data;+boundary=----WebKitFormBoundaryI2LqXA2cuue4jH06 10525 - 500 - application/json;+charset=utf-8 474.8882ms
+2023-09-02 11:07:21.406 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=008 multipart/form-data;+boundary=----WebKitFormBoundaryu9VtBuZl0ViAR9Nv 101094
+2023-09-02 11:07:21.423 +01:00 [INF] CORS policy execution successful.
+2023-09-02 11:07:21.430 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:07:21.431 +01:00 [INF] Route matched with {action = "DBMultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 11:07:21.517 +01:00 [ERR] Failed executing DbCommand (49ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductImage] ([id], [productcode], [productimage])
+VALUES (@p0, @p1, @p2);
+2023-09-02 11:07:21.519 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'Techie.Repos.LearnDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_ProductImage'. Cannot insert duplicate key in object 'dbo.ProductImage'. The duplicate key value is (0).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7a283540-0b2a-4e8b-892b-17cf2a0f6ded
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_ProductImage'. Cannot insert duplicate key in object 'dbo.ProductImage'. The duplicate key value is (0).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7a283540-0b2a-4e8b-892b-17cf2a0f6ded
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-09-02 11:07:21.526 +01:00 [INF] Executing ObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 11:07:21.526 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBMultipleUploadImage (Techie) in 95.4559ms
+2023-09-02 11:07:21.526 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:07:21.527 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=008 multipart/form-data;+boundary=----WebKitFormBoundaryu9VtBuZl0ViAR9Nv 101094 - 500 - application/json;+charset=utf-8 120.9818ms
+2023-09-02 11:08:35.664 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=008 multipart/form-data;+boundary=----WebKitFormBoundaryx8kA7DbTAaYbzqvl 101094
+2023-09-02 11:08:35.677 +01:00 [INF] CORS policy execution successful.
+2023-09-02 11:08:35.679 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:08:35.681 +01:00 [INF] Route matched with {action = "DBMultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 11:08:35.739 +01:00 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductImage] ([id], [productcode], [productimage])
+VALUES (@p0, @p1, @p2);
+2023-09-02 11:08:35.758 +01:00 [INF] Executing ObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 11:08:35.759 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBMultipleUploadImage (Techie) in 77.7969ms
+2023-09-02 11:08:35.759 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:08:35.759 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=008 multipart/form-data;+boundary=----WebKitFormBoundaryx8kA7DbTAaYbzqvl 101094 - 500 - application/json;+charset=utf-8 96.1551ms
+2023-09-02 11:08:43.417 +01:00 [INF] Application is shutting down...
+2023-09-02 11:08:46.361 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 11:08:46.494 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 11:08:46.495 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 11:08:46.496 +01:00 [INF] Hosting environment: Development
+2023-09-02 11:08:46.496 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 11:08:48.546 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=008 multipart/form-data;+boundary=----WebKitFormBoundaryVxHhVLvShFGAdisc 101094
+2023-09-02 11:08:48.572 +01:00 [INF] CORS policy execution successful.
+2023-09-02 11:08:48.574 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 11:08:48.587 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:08:48.596 +01:00 [INF] Route matched with {action = "DBMultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 11:08:49.011 +01:00 [ERR] Failed executing DbCommand (35ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductImage] ([id], [productcode], [productimage])
+VALUES (@p0, @p1, @p2);
+2023-09-02 11:08:49.025 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'Techie.Repos.LearnDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_ProductImage'. Cannot insert duplicate key in object 'dbo.ProductImage'. The duplicate key value is (0).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:d636389c-5ac4-4145-a801-f100a9cc0b19
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_ProductImage'. Cannot insert duplicate key in object 'dbo.ProductImage'. The duplicate key value is (0).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:d636389c-5ac4-4145-a801-f100a9cc0b19
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-09-02 11:08:49.031 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 11:08:49.041 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBMultipleUploadImage (Techie) in 443.2773ms
+2023-09-02 11:08:49.041 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:08:49.044 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=008 multipart/form-data;+boundary=----WebKitFormBoundaryVxHhVLvShFGAdisc 101094 - 200 - application/json;+charset=utf-8 499.1990ms
+2023-09-02 11:09:36.578 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=8 multipart/form-data;+boundary=----WebKitFormBoundaryiPqNjXfiiCza1gv5 101094
+2023-09-02 11:09:36.584 +01:00 [INF] CORS policy execution successful.
+2023-09-02 11:09:36.585 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:09:36.586 +01:00 [INF] Route matched with {action = "DBMultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 11:09:36.660 +01:00 [INF] Executed DbCommand (41ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductImage] ([id], [productcode], [productimage])
+VALUES (@p0, @p1, @p2);
+2023-09-02 11:09:36.669 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 11:09:36.669 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBMultipleUploadImage (Techie) in 83.6821ms
+2023-09-02 11:09:36.670 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:09:36.670 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=8 multipart/form-data;+boundary=----WebKitFormBoundaryiPqNjXfiiCza1gv5 101094 - 200 - application/json;+charset=utf-8 92.6311ms
+2023-09-02 11:13:15.040 +01:00 [INF] Application is shutting down...
+2023-09-02 11:13:19.197 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 11:13:19.265 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 11:13:19.271 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 11:13:19.272 +01:00 [INF] Hosting environment: Development
+2023-09-02 11:13:19.272 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 11:13:19.330 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 11:13:19.372 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 42.3181ms
+2023-09-02 11:13:19.710 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 11:13:19.769 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 59.3995ms
+2023-09-02 11:14:14.700 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundaryKZHnXTxrxWmGzqhs 101091
+2023-09-02 11:14:14.711 +01:00 [INF] CORS policy execution successful.
+2023-09-02 11:14:14.722 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 11:14:14.752 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:14:14.769 +01:00 [INF] Route matched with {action = "DBMultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 11:14:15.271 +01:00 [ERR] Failed executing DbCommand (59ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductImage] ([id], [productcode], [productimage])
+VALUES (@p0, @p1, @p2);
+2023-09-02 11:14:15.293 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'Techie.Repos.LearnDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_ProductImage'. Cannot insert duplicate key in object 'dbo.ProductImage'. The duplicate key value is (0).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:a7e6e884-58e7-46d6-be9e-e6104233e938
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_ProductImage'. Cannot insert duplicate key in object 'dbo.ProductImage'. The duplicate key value is (0).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:a7e6e884-58e7-46d6-be9e-e6104233e938
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-09-02 11:14:15.298 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 11:14:15.302 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBMultipleUploadImage (Techie) in 531.4887ms
+2023-09-02 11:14:15.302 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:14:15.305 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundaryKZHnXTxrxWmGzqhs 101091 - 200 - application/json;+charset=utf-8 606.1603ms
+2023-09-02 11:16:41.306 +01:00 [INF] Application is shutting down...
+2023-09-02 11:16:44.989 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 11:16:45.038 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 11:16:45.039 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 11:16:45.039 +01:00 [INF] Hosting environment: Development
+2023-09-02 11:16:45.039 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 11:17:16.335 +01:00 [INF] Application is shutting down...
+2023-09-02 11:17:18.626 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 11:17:18.677 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 11:17:18.678 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 11:17:18.678 +01:00 [INF] Hosting environment: Development
+2023-09-02 11:17:18.678 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 11:17:34.721 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundaryYheh4BPjKRrLRRV8 101091
+2023-09-02 11:17:34.746 +01:00 [INF] CORS policy execution successful.
+2023-09-02 11:17:34.748 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 11:17:34.761 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:17:34.770 +01:00 [INF] Route matched with {action = "DBMultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 11:17:35.194 +01:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductImage] ([id], [productcode], [productimage])
+VALUES (@p0, @p1, @p2);
+2023-09-02 11:17:35.206 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 11:17:35.214 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBMultipleUploadImage (Techie) in 443.413ms
+2023-09-02 11:17:35.215 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:17:35.218 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundaryYheh4BPjKRrLRRV8 101091 - 200 - application/json;+charset=utf-8 498.9827ms
+2023-09-02 11:17:40.530 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 11:17:40.599 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 69.7298ms
+2023-09-02 11:17:40.742 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 11:17:40.803 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 61.3077ms
+2023-09-02 11:18:02.380 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundarykI1K1p46KmcIoxj0 101091
+2023-09-02 11:18:02.386 +01:00 [INF] CORS policy execution successful.
+2023-09-02 11:18:02.388 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:18:02.388 +01:00 [INF] Route matched with {action = "DBMultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 11:18:02.481 +01:00 [ERR] Failed executing DbCommand (57ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductImage] ([id], [productcode], [productimage])
+VALUES (@p0, @p1, @p2);
+2023-09-02 11:18:02.497 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'Techie.Repos.LearnDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_ProductImage'. Cannot insert duplicate key in object 'dbo.ProductImage'. The duplicate key value is (0).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:3e7cf412-738b-489d-b062-0b71ede543c2
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_ProductImage'. Cannot insert duplicate key in object 'dbo.ProductImage'. The duplicate key value is (0).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:3e7cf412-738b-489d-b062-0b71ede543c2
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-09-02 11:18:02.500 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 11:18:02.500 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBMultipleUploadImage (Techie) in 111.9716ms
+2023-09-02 11:18:02.501 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:18:02.501 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundarykI1K1p46KmcIoxj0 101091 - 200 - application/json;+charset=utf-8 121.2259ms
+2023-09-02 11:20:51.275 +01:00 [INF] Application is shutting down...
+2023-09-02 11:21:38.563 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 11:21:38.619 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 11:21:38.621 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 11:21:38.622 +01:00 [INF] Hosting environment: Development
+2023-09-02 11:21:38.622 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 11:21:43.658 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundarygvMP1Jeoe24AKdne 101091
+2023-09-02 11:21:43.694 +01:00 [INF] CORS policy execution successful.
+2023-09-02 11:21:43.696 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 11:21:43.710 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:21:43.718 +01:00 [INF] Route matched with {action = "DBMultipleUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultipleUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 11:21:44.183 +01:00 [INF] Executed DbCommand (46ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductImage] ([productcode], [productimage])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1);
+2023-09-02 11:21:44.209 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductImage] ([productcode], [productimage])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1);
+2023-09-02 11:21:44.212 +01:00 [INF] Executing OkObjectResult, writing value of type 'Techie.Modal.ApiResponse'.
+2023-09-02 11:21:44.222 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBMultipleUploadImage (Techie) in 502.8108ms
+2023-09-02 11:21:44.222 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBMultipleUploadImage (Techie)'
+2023-09-02 11:21:44.226 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5197/api/Product/DBMultipleUploadImage?productcode=001 multipart/form-data;+boundary=----WebKitFormBoundarygvMP1Jeoe24AKdne 101091 - 200 - application/json;+charset=utf-8 569.4707ms
+2023-09-02 11:26:35.361 +01:00 [INF] Application is shutting down...
+2023-09-02 11:26:42.216 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 11:26:42.340 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 11:26:42.341 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 11:26:42.341 +01:00 [INF] Hosting environment: Development
+2023-09-02 11:26:42.341 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 11:26:59.084 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 11:26:59.141 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 58.0648ms
+2023-09-02 11:26:59.341 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 11:26:59.389 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 48.3568ms
+2023-09-02 11:27:10.858 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Product/GetDBMultipleImage?productcode=001 - -
+2023-09-02 11:27:10.876 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 11:27:10.899 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.GetDBMultipleImage (Techie)'
+2023-09-02 11:27:10.908 +01:00 [INF] Route matched with {action = "GetDBMultipleImage", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDBMultipleImage(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 11:27:11.554 +01:00 [INF] Executed DbCommand (141ms) [Parameters=[@__productcode_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[id], [p].[productcode], [p].[productimage]
+FROM [ProductImage] AS [p]
+WHERE [p].[productcode] = @__productcode_0
+2023-09-02 11:27:11.582 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-09-02 11:27:11.586 +01:00 [INF] Executed action Techie.Controllers.ProductController.GetDBMultipleImage (Techie) in 676.9061ms
+2023-09-02 11:27:11.586 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.GetDBMultipleImage (Techie)'
+2023-09-02 11:27:11.589 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/GetDBMultipleImage?productcode=001 - - - 200 - application/json;+charset=utf-8 732.2375ms
+2023-09-02 11:32:47.769 +01:00 [INF] Application is shutting down...
+2023-09-02 11:32:51.764 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 11:32:51.815 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 11:32:51.817 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 11:32:51.817 +01:00 [INF] Hosting environment: Development
+2023-09-02 11:32:51.817 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 11:32:54.134 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 11:32:54.198 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 65.6940ms
+2023-09-02 11:32:54.374 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 11:32:54.421 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 47.3876ms
+2023-09-02 11:33:06.588 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Product/DBdownload?productcode=001 - -
+2023-09-02 11:33:06.612 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 11:33:06.632 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBDownload (Techie)'
+2023-09-02 11:33:06.646 +01:00 [INF] Route matched with {action = "DBDownload", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBDownload(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 11:33:07.184 +01:00 [INF] Executed DbCommand (80ms) [Parameters=[@__productcode_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[id], [p].[productcode], [p].[productimage]
+FROM [ProductImage] AS [p]
+WHERE [p].[productcode] = @__productcode_0
+2023-09-02 11:33:07.211 +01:00 [INF] Executing FileStreamResult, sending file with download name '001.png' ...
+2023-09-02 11:33:07.214 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBDownload (Techie) in 566.5119ms
+2023-09-02 11:33:07.214 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBDownload (Techie)'
+2023-09-02 11:33:07.217 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/DBdownload?productcode=001 - - - 200 50376 image/png 629.2795ms
+2023-09-02 11:34:06.033 +01:00 [INF] Application is shutting down...
+2023-09-02 11:34:11.110 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 11:34:11.214 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 11:34:11.215 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 11:34:11.215 +01:00 [INF] Hosting environment: Development
+2023-09-02 11:34:11.215 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 11:34:12.890 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Product/DBdownload?productcode=001 - -
+2023-09-02 11:34:12.925 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 11:34:12.939 +01:00 [INF] Executing endpoint 'Techie.Controllers.ProductController.DBDownload (Techie)'
+2023-09-02 11:34:12.947 +01:00 [INF] Route matched with {action = "DBDownload", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBDownload(System.String) on controller Techie.Controllers.ProductController (Techie).
+2023-09-02 11:34:13.421 +01:00 [INF] Executed DbCommand (25ms) [Parameters=[@__productcode_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[id], [p].[productcode], [p].[productimage]
+FROM [ProductImage] AS [p]
+WHERE [p].[productcode] = @__productcode_0
+2023-09-02 11:34:13.456 +01:00 [INF] Executing FileContentResult, sending file with download name '001.png' ...
+2023-09-02 11:34:13.460 +01:00 [INF] Executed action Techie.Controllers.ProductController.DBDownload (Techie) in 511.5248ms
+2023-09-02 11:34:13.460 +01:00 [INF] Executed endpoint 'Techie.Controllers.ProductController.DBDownload (Techie)'
+2023-09-02 11:34:13.463 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Product/DBdownload?productcode=001 - - - 200 50376 image/png 574.6033ms
+2023-09-02 11:37:48.987 +01:00 [INF] Application is shutting down...
+2023-09-02 12:48:33.101 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 12:48:33.184 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 12:48:33.187 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 12:48:33.187 +01:00 [INF] Hosting environment: Development
+2023-09-02 12:48:33.187 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 12:48:34.317 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 12:48:34.372 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 56.5587ms
+2023-09-02 12:48:34.515 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 12:48:34.561 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 45.5094ms
+2023-09-02 12:48:39.168 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/export - -
+2023-09-02 12:48:39.186 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 12:48:39.212 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-02 12:48:39.214 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-02 12:48:39.215 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/export - - - 401 0 - 46.8733ms
+2023-09-02 12:49:24.069 +01:00 [INF] Application is shutting down...
+2023-09-02 12:49:29.044 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 12:49:29.092 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 12:49:29.093 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 12:49:29.093 +01:00 [INF] Hosting environment: Development
+2023-09-02 12:49:29.093 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 12:49:29.154 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 12:49:29.205 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 51.4915ms
+2023-09-02 12:49:29.347 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 12:49:29.399 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 51.4256ms
+2023-09-02 12:49:33.662 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/export - -
+2023-09-02 12:49:33.689 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 12:49:33.708 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 12:49:33.718 +01:00 [INF] Route matched with {action = "ExportToExcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportToExcel() on controller Techie.Container.CustomerController (Techie).
+2023-09-02 12:49:34.250 +01:00 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-02 12:49:34.545 +01:00 [INF] Executing FileContentResult, sending file with download name 'CustomerInfo.xlsx' ...
+2023-09-02 12:49:34.548 +01:00 [INF] Executed action Techie.Container.CustomerController.ExportToExcel (Techie) in 828.4854ms
+2023-09-02 12:49:34.549 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 12:49:34.552 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/export - - - 200 7180 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 889.7640ms
+2023-09-02 12:51:44.664 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/export - -
+2023-09-02 12:51:44.697 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 12:51:44.700 +01:00 [INF] Route matched with {action = "ExportToExcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportToExcel() on controller Techie.Container.CustomerController (Techie).
+2023-09-02 12:51:44.729 +01:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-02 12:51:44.745 +01:00 [INF] Executing FileContentResult, sending file with download name 'CustomerInfo.xlsx' ...
+2023-09-02 12:51:44.747 +01:00 [INF] Executed action Techie.Container.CustomerController.ExportToExcel (Techie) in 46.806ms
+2023-09-02 12:51:44.747 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 12:51:44.747 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/export - - - 200 7263 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 83.6432ms
+2023-09-02 12:52:24.415 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/export - -
+2023-09-02 12:52:24.447 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 12:52:24.449 +01:00 [INF] Route matched with {action = "ExportToExcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportToExcel() on controller Techie.Container.CustomerController (Techie).
+2023-09-02 12:52:24.516 +01:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-02 12:52:24.524 +01:00 [INF] Executing FileContentResult, sending file with download name 'CustomerInfo.xlsx' ...
+2023-09-02 12:52:24.525 +01:00 [INF] Executed action Techie.Container.CustomerController.ExportToExcel (Techie) in 75.5406ms
+2023-09-02 12:52:24.525 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 12:52:24.525 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/export - - - 200 7263 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 111.0014ms
+2023-09-02 12:59:47.658 +01:00 [INF] Application is shutting down...
+2023-09-02 13:00:04.663 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 13:00:04.781 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 13:00:04.783 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 13:00:04.784 +01:00 [INF] Hosting environment: Development
+2023-09-02 13:00:04.784 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 13:00:05.354 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 13:00:05.433 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 79.4447ms
+2023-09-02 13:00:05.603 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 13:00:05.657 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 54.0920ms
+2023-09-02 13:00:15.348 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/export - -
+2023-09-02 13:00:15.381 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 13:00:15.426 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 13:00:15.433 +01:00 [INF] Route matched with {action = "ExportToExcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportToExcel() on controller Techie.Container.CustomerController (Techie).
+2023-09-02 13:00:15.976 +01:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-02 13:00:16.441 +01:00 [INF] Executing FileContentResult, sending file with download name 'CustomerInfo.xlsx' ...
+2023-09-02 13:00:16.446 +01:00 [INF] Executed action Techie.Container.CustomerController.ExportToExcel (Techie) in 1009.8498ms
+2023-09-02 13:00:16.447 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 13:00:16.452 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/export - - - 200 7263 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 1104.3585ms
+2023-09-02 13:04:25.779 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 13:04:25.910 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 13:04:25.912 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 13:04:25.913 +01:00 [INF] Hosting environment: Development
+2023-09-02 13:04:25.913 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 13:04:26.294 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 13:04:26.370 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 77.2657ms
+2023-09-02 13:04:26.815 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 13:04:26.866 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 51.0404ms
+2023-09-02 13:04:35.621 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/export - -
+2023-09-02 13:04:35.657 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 13:04:35.699 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 13:04:35.707 +01:00 [INF] Route matched with {action = "ExportToExcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportToExcel() on controller Techie.Container.CustomerController (Techie).
+2023-09-02 13:04:36.236 +01:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-02 13:04:36.688 +01:00 [INF] Executing FileContentResult, sending file with download name 'CustomerInfo.xlsx' ...
+2023-09-02 13:04:36.692 +01:00 [INF] Executed action Techie.Container.CustomerController.ExportToExcel (Techie) in 983.5627ms
+2023-09-02 13:04:36.692 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 13:04:36.695 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/export - - - 200 7263 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 1074.7188ms
+2023-09-02 13:06:36.406 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 13:06:36.462 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 13:06:36.464 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 13:06:36.464 +01:00 [INF] Hosting environment: Development
+2023-09-02 13:06:36.464 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 13:06:38.596 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/ - -
+2023-09-02 13:06:38.668 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 13:06:38.714 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/ - - - 404 0 - 120.4436ms
+2023-09-02 13:06:42.855 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 13:06:42.902 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 47.9788ms
+2023-09-02 13:06:43.022 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 13:06:43.092 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 69.6588ms
+2023-09-02 13:06:47.859 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/export - -
+2023-09-02 13:06:47.882 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 13:06:47.894 +01:00 [INF] Route matched with {action = "ExportToExcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportToExcel() on controller Techie.Container.CustomerController (Techie).
+2023-09-02 13:06:48.361 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-02 13:06:48.830 +01:00 [INF] Executing FileContentResult, sending file with download name 'CustomerInfo.xlsx' ...
+2023-09-02 13:06:48.833 +01:00 [INF] Executed action Techie.Container.CustomerController.ExportToExcel (Techie) in 937.8105ms
+2023-09-02 13:06:48.834 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 13:06:48.838 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/export - - - 200 6999 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 979.0043ms
+2023-09-02 13:07:07.173 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5197/api/Customer application/json 243
+2023-09-02 13:07:07.196 +01:00 [INF] CORS policy execution successful.
+2023-09-02 13:07:07.203 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-02 13:07:07.205 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-02 13:07:07.206 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Customer application/json 243 - 401 0 - 32.4820ms
+2023-09-02 13:07:56.109 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46
+2023-09-02 13:07:56.116 +01:00 [INF] CORS policy execution successful.
+2023-09-02 13:07:56.134 +01:00 [INF] Executing endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-02 13:07:56.165 +01:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Techie.Modal.UserCred) on controller Techie.Controllers.AuthorizeController (Techie).
+2023-09-02 13:07:56.305 +01:00 [INF] Executed DbCommand (39ms) [Parameters=[@__userCred_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__userCred_UserName_0
+2023-09-02 13:07:56.330 +01:00 [INF] Executed action Techie.Controllers.AuthorizeController.GenerateToken (Techie) in 164.7324ms
+2023-09-02 13:07:56.330 +01:00 [INF] Executed endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-02 13:07:56.347 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+BCrypt.Net.SaltParseException: Invalid salt version
+   at BCrypt.Net.BCrypt.HashPassword(String inputKey, String salt, Boolean enhancedEntropy, HashType hashType)
+   at BCrypt.Net.BCrypt.Verify(String text, String hash, Boolean enhancedEntropy, HashType hashType)
+   at Techie.Controllers.AuthorizeController.GenerateToken(UserCred userCred) in /Users/abayomiogunnusi/Desktop/Blog/Techie/Controllers/AuthorizeController.cs:line 45
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-09-02 13:07:56.351 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46 - 500 - text/plain;+charset=utf-8 241.9784ms
+2023-09-02 13:10:32.635 +01:00 [INF] Application is shutting down...
+2023-09-02 13:10:37.816 +01:00 [INF] User profile is available. Using '/Users/abayomiogunnusi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-09-02 13:10:37.866 +01:00 [INF] Now listening on: http://localhost:5197
+2023-09-02 13:10:37.868 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 13:10:37.868 +01:00 [INF] Hosting environment: Development
+2023-09-02 13:10:37.868 +01:00 [INF] Content root path: /Users/abayomiogunnusi/Desktop/Blog/Techie
+2023-09-02 13:10:44.083 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46
+2023-09-02 13:10:44.115 +01:00 [INF] CORS policy execution successful.
+2023-09-02 13:10:44.117 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-02 13:10:44.134 +01:00 [INF] Executing endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-02 13:10:44.142 +01:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Techie.Modal.UserCred) on controller Techie.Controllers.AuthorizeController (Techie).
+2023-09-02 13:10:44.669 +01:00 [INF] Executed DbCommand (21ms) [Parameters=[@__userCred_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__userCred_UserName_0
+2023-09-02 13:10:44.698 +01:00 [INF] Executed action Techie.Controllers.AuthorizeController.GenerateToken (Techie) in 554.468ms
+2023-09-02 13:10:44.698 +01:00 [INF] Executed endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-02 13:10:44.709 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+BCrypt.Net.SaltParseException: Invalid salt version
+   at BCrypt.Net.BCrypt.HashPassword(String inputKey, String salt, Boolean enhancedEntropy, HashType hashType)
+   at BCrypt.Net.BCrypt.Verify(String text, String hash, Boolean enhancedEntropy, HashType hashType)
+   at Techie.Controllers.AuthorizeController.GenerateToken(UserCred userCred) in /Users/abayomiogunnusi/Desktop/Blog/Techie/Controllers/AuthorizeController.cs:line 45
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-09-02 13:10:44.715 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 46 - 500 - text/plain;+charset=utf-8 633.0943ms
+2023-09-02 13:11:53.598 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 53
+2023-09-02 13:11:53.605 +01:00 [INF] CORS policy execution successful.
+2023-09-02 13:11:53.609 +01:00 [INF] Executing endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-02 13:11:53.613 +01:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Techie.Modal.UserCred) on controller Techie.Controllers.AuthorizeController (Techie).
+2023-09-02 13:11:53.675 +01:00 [INF] Executed DbCommand (21ms) [Parameters=[@__userCred_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Code], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[role]
+FROM [User] AS [u]
+WHERE [u].[Code] = @__userCred_UserName_0
+2023-09-02 13:11:53.940 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__ToString_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[userid], [r].[refreshtoken], [r].[tokenid]
+FROM [RefreshToken] AS [r]
+WHERE [r].[userid] = @__ToString_0
+2023-09-02 13:11:53.993 +01:00 [INF] Executed DbCommand (21ms) [Parameters=[@p2='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString), @p1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [RefreshToken] SET [refreshtoken] = @p0, [tokenid] = @p1
+OUTPUT 1
+WHERE [userid] = @p2;
+2023-09-02 13:11:53.999 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__ToString_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[userid], [r].[refreshtoken], [r].[tokenid]
+FROM [RefreshToken] AS [r]
+WHERE [r].[userid] = @__ToString_0
+2023-09-02 13:11:54.003 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@p2='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString), @p1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [RefreshToken] SET [refreshtoken] = @p0, [tokenid] = @p1
+OUTPUT 1
+WHERE [userid] = @p2;
+2023-09-02 13:11:54.005 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ToString_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[userid], [r].[refreshtoken], [r].[tokenid]
+FROM [RefreshToken] AS [r]
+WHERE [r].[userid] = @__ToString_0
+2023-09-02 13:11:54.007 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@p2='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString), @p1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [RefreshToken] SET [refreshtoken] = @p0, [tokenid] = @p1
+OUTPUT 1
+WHERE [userid] = @p2;
+2023-09-02 13:11:54.011 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-09-02 13:11:54.016 +01:00 [INF] Executed action Techie.Controllers.AuthorizeController.GenerateToken (Techie) in 402.723ms
+2023-09-02 13:11:54.016 +01:00 [INF] Executed endpoint 'Techie.Controllers.AuthorizeController.GenerateToken (Techie)'
+2023-09-02 13:11:54.016 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Authorize/GenerateToken application/json 53 - 200 - application/json;+charset=utf-8 418.7724ms
+2023-09-02 13:12:10.262 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5197/api/Customer application/json 247
+2023-09-02 13:12:10.307 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.AddCustomer (Techie)'
+2023-09-02 13:12:10.311 +01:00 [INF] Route matched with {action = "AddCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddCustomer(Techie.Modal.CustomerModel) on controller Techie.Container.CustomerController (Techie).
+2023-09-02 13:12:10.403 +01:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = DateTime), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (DbType = Boolean), @p5='?' (Size = 50) (DbType = AnsiString), @p6='?' (Size = 50) (DbType = AnsiString), @p7='?' (Size = 50) (DbType = AnsiString), @p8='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customer] ([Code], [CreatedDate], [Creditlimit], [Email], [IsActive], [Name], [PhoneNumber], [TaxCode], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2023-09-02 13:12:10.410 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-09-02 13:12:10.410 +01:00 [INF] Executed action Techie.Container.CustomerController.AddCustomer (Techie) in 99.16ms
+2023-09-02 13:12:10.410 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.AddCustomer (Techie)'
+2023-09-02 13:12:10.411 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5197/api/Customer application/json 247 - 200 - text/plain;+charset=utf-8 148.9304ms
+2023-09-02 13:12:20.176 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/index.html - -
+2023-09-02 13:12:20.222 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/index.html - - - 200 - text/html;charset=utf-8 46.1312ms
+2023-09-02 13:12:20.390 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - -
+2023-09-02 13:12:20.443 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 53.2219ms
+2023-09-02 13:12:25.299 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5197/api/Customer/export - -
+2023-09-02 13:12:25.322 +01:00 [INF] Executing endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 13:12:25.325 +01:00 [INF] Route matched with {action = "ExportToExcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportToExcel() on controller Techie.Container.CustomerController (Techie).
+2023-09-02 13:12:25.368 +01:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CreatedDate], [c].[Creditlimit], [c].[Email], [c].[IsActive], [c].[Name], [c].[PhoneNumber], [c].[TaxCode], [c].[UpdatedDate]
+FROM [Customer] AS [c]
+2023-09-02 13:12:25.778 +01:00 [INF] Executing FileContentResult, sending file with download name 'CustomerInfo.xlsx' ...
+2023-09-02 13:12:25.780 +01:00 [INF] Executed action Techie.Container.CustomerController.ExportToExcel (Techie) in 454.8548ms
+2023-09-02 13:12:25.780 +01:00 [INF] Executed endpoint 'Techie.Container.CustomerController.ExportToExcel (Techie)'
+2023-09-02 13:12:25.781 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5197/api/Customer/export - - - 200 7040 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 482.1444ms
+2023-09-02 13:16:08.686 +01:00 [INF] Application is shutting down...
